@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "unit": "source-category catalogue entry; not a deduplicated cross-dataset object count",
-  "catalogue_entries": 134644,
-  "source_category_groups": 1100,
+  "catalogue_entries": 131352,
+  "source_category_groups": 1091,
   "datasets": [
     {
       "id": "oxl",
@@ -23,15 +23,15 @@
       "id": "omni",
       "name": "Omni6DPose",
       "color": "#d2bbff",
-      "instances": 4894,
+      "instances": 4302,
       "categories": 153,
-      "metadata_source": "omni6dpose_summary.json",
-      "scope": "Merged obj_meta and real_obj_meta catalogue; source metadata version with 153 categories.",
-      "sphere_radius": 48.81308877868257,
+      "metadata_source": "summary_all_filtered_sheets.xlsx / omni6dpose",
+      "scope": "Complete filtered project inventory; source-category definitions retained.",
+      "sphere_radius": 47.287595030053645,
       "center3d": [
-        18.27871,
-        2.44687,
-        144.05598
+        88.36579948969384,
+        -9.120108159707028,
+        -112.959497357907
       ]
     },
     {
@@ -40,28 +40,28 @@
       "color": "#f9ba6d",
       "instances": 14812,
       "categories": 49,
-      "metadata_source": "3d_future_summary.json",
-      "scope": "All classified model_info entries; 1,751 entries with category None excluded.",
+      "metadata_source": "summary_all_filtered_sheets.xlsx / 3d_future",
+      "scope": "Complete filtered project inventory; source-category definitions retained.",
       "sphere_radius": 61.710545192621744,
       "center3d": [
-        -117.95602,
-        83.81321,
-        63.74885
+        -117.95601781935389,
+        83.813211793251,
+        63.74884733421756
       ]
     },
     {
       "id": "hssd",
       "name": "HSSD",
       "color": "#a8de86",
-      "instances": 17993,
-      "categories": 409,
-      "metadata_source": "dataset_summary/summary_hssd_condensed.json",
-      "scope": "Complete hssd_obj_semantics_condensed metadata; 409 source labels.",
-      "sphere_radius": 61.31558407035172,
+      "instances": 15293,
+      "categories": 400,
+      "metadata_source": "summary_all_filtered_sheets.xlsx / hssd",
+      "scope": "Complete filtered project inventory; source-category definitions retained.",
+      "sphere_radius": 59.395393687239604,
       "center3d": [
-        112.88929,
-        110.14051,
-        2.04296
+        34.19326905055333,
+        -150.46353568095984,
+        21.805468622950194
       ]
     },
     {
@@ -70,13 +70,13 @@
       "color": "#f18bb0",
       "instances": 52472,
       "categories": 55,
-      "metadata_source": "dataset_summary/summary_shapenetcore.json",
-      "scope": "ShapeNetCore source category inventory; category memberships retained.",
+      "metadata_source": "summary_all_filtered_sheets.xlsx / shapenetcore",
+      "scope": "Complete filtered project inventory; source-category definitions retained.",
       "sphere_radius": 98.22230500929179,
       "center3d": [
-        -164.20115,
-        -98.7922,
-        34.09758
+        41.20128503116116,
+        139.32178575390336,
+        129.51432245401242
       ]
     }
   ],
@@ -90,24 +90,28 @@
       "sha256": "7e6e4f55bc88566cddab014bcc6f8dddaee7d40f5f7b776df4537a135809b6c4"
     },
     {
-      "file": "3d_future_summary.json",
-      "sha256": "a3e69aed5f9718053e8b4810a8b7c4570d260aa1e3f769be8b00725017ae3b5e"
-    },
-    {
-      "file": "dataset_summary/summary_hssd_condensed.json",
-      "sha256": "ac16229cb558ab29e79d722c4796428f4ea7db21ae83e55845f22711f5235309"
-    },
-    {
-      "file": "dataset_summary/summary_shapenetcore.json",
-      "sha256": "97a25103876c8ac678c6b9064d3bdd249570a8f82cf832b0d747b49b21aaa470"
-    },
-    {
       "file": "renders_xl_check_merged.json",
       "sha256": "73f00ac67fc410efe39afd8cca980c1c66fc0f6fcc4a2647b6dc631880e59f9a"
     },
     {
       "file": "omni6dpose_renders_check.json",
       "sha256": "ec45c12fee3b8863f5f0e22528dbd4241334c82edd7658ef889f196765db6104"
+    },
+    {
+      "file": "summary/dataset_summary/summary_all_filtered_sheets.xlsx",
+      "sha256": "2aca0de8ff7e4c0abbd9cb856b1e62753a110020cdd390551ef2b0e3c3224d92"
+    },
+    {
+      "file": "check/3df_renders_check.json",
+      "sha256": "4f3d893c2743b921a99f9002bb251bf5554558add86487c1272d4128e19086ac"
+    },
+    {
+      "file": "check/renders_shapenet_check_b12.json",
+      "sha256": "9821a37e09d0869723da7c2c6847688fb9fdb41227a44ea504ff63037214e5a8"
+    },
+    {
+      "file": "check/renders_shapenet_check_b34.json",
+      "sha256": "88d95176f2a53ba1909f8e6f6d585070732259d8363d34e2a324db8eb87e4cff"
     }
   ],
   "categories": [
@@ -4022,7 +4026,7 @@
       "dataset": "omni",
       "label": "backpack",
       "source_category": "backpack",
-      "count": 32,
+      "count": 28,
       "orientation_count": 28,
       "render_count": 28
     },
@@ -4031,7 +4035,7 @@
       "dataset": "omni",
       "label": "ball",
       "source_category": "ball",
-      "count": 29,
+      "count": 25,
       "orientation_count": 25,
       "render_count": 25
     },
@@ -4049,7 +4053,7 @@
       "dataset": "omni",
       "label": "banana",
       "source_category": "banana",
-      "count": 29,
+      "count": 25,
       "orientation_count": 25,
       "render_count": 25
     },
@@ -4058,7 +4062,7 @@
       "dataset": "omni",
       "label": "battery",
       "source_category": "battery",
-      "count": 6,
+      "count": 3,
       "orientation_count": 3,
       "render_count": 3
     },
@@ -4067,7 +4071,7 @@
       "dataset": "omni",
       "label": "belt",
       "source_category": "belt",
-      "count": 30,
+      "count": 26,
       "orientation_count": 26,
       "render_count": 26
     },
@@ -4076,7 +4080,7 @@
       "dataset": "omni",
       "label": "book",
       "source_category": "book",
-      "count": 41,
+      "count": 38,
       "orientation_count": 38,
       "render_count": 38
     },
@@ -4085,7 +4089,7 @@
       "dataset": "omni",
       "label": "bottle",
       "source_category": "bottle",
-      "count": 55,
+      "count": 51,
       "orientation_count": 51,
       "render_count": 51
     },
@@ -4094,7 +4098,7 @@
       "dataset": "omni",
       "label": "bowl",
       "source_category": "bowl",
-      "count": 31,
+      "count": 26,
       "orientation_count": 26,
       "render_count": 26
     },
@@ -4103,7 +4107,7 @@
       "dataset": "omni",
       "label": "box",
       "source_category": "box",
-      "count": 358,
+      "count": 354,
       "orientation_count": 354,
       "render_count": 354
     },
@@ -4112,7 +4116,7 @@
       "dataset": "omni",
       "label": "boxed beverage",
       "source_category": "boxed_beverage",
-      "count": 15,
+      "count": 10,
       "orientation_count": 10,
       "render_count": 10
     },
@@ -4121,7 +4125,7 @@
       "dataset": "omni",
       "label": "bread",
       "source_category": "bread",
-      "count": 87,
+      "count": 80,
       "orientation_count": 80,
       "render_count": 80
     },
@@ -4130,7 +4134,7 @@
       "dataset": "omni",
       "label": "brush",
       "source_category": "brush",
-      "count": 27,
+      "count": 24,
       "orientation_count": 24,
       "render_count": 24
     },
@@ -4139,7 +4143,7 @@
       "dataset": "omni",
       "label": "bucket noodle",
       "source_category": "bucket_noodle",
-      "count": 27,
+      "count": 24,
       "orientation_count": 24,
       "render_count": 24
     },
@@ -4148,7 +4152,7 @@
       "dataset": "omni",
       "label": "bumbag",
       "source_category": "bumbag",
-      "count": 11,
+      "count": 8,
       "orientation_count": 8,
       "render_count": 8
     },
@@ -4166,7 +4170,7 @@
       "dataset": "omni",
       "label": "cake",
       "source_category": "cake",
-      "count": 23,
+      "count": 19,
       "orientation_count": 19,
       "render_count": 19
     },
@@ -4175,7 +4179,7 @@
       "dataset": "omni",
       "label": "calculator",
       "source_category": "calculator",
-      "count": 24,
+      "count": 20,
       "orientation_count": 20,
       "render_count": 20
     },
@@ -4184,7 +4188,7 @@
       "dataset": "omni",
       "label": "camera",
       "source_category": "camera",
-      "count": 23,
+      "count": 19,
       "orientation_count": 19,
       "render_count": 19
     },
@@ -4193,7 +4197,7 @@
       "dataset": "omni",
       "label": "can",
       "source_category": "can",
-      "count": 29,
+      "count": 25,
       "orientation_count": 25,
       "render_count": 25
     },
@@ -4202,7 +4206,7 @@
       "dataset": "omni",
       "label": "candle",
       "source_category": "candle",
-      "count": 12,
+      "count": 9,
       "orientation_count": 9,
       "render_count": 9
     },
@@ -4211,7 +4215,7 @@
       "dataset": "omni",
       "label": "candy",
       "source_category": "candy",
-      "count": 31,
+      "count": 26,
       "orientation_count": 26,
       "render_count": 26
     },
@@ -4220,7 +4224,7 @@
       "dataset": "omni",
       "label": "carrot",
       "source_category": "carrot",
-      "count": 24,
+      "count": 20,
       "orientation_count": 20,
       "render_count": 20
     },
@@ -4238,7 +4242,7 @@
       "dataset": "omni",
       "label": "chess",
       "source_category": "chess",
-      "count": 26,
+      "count": 20,
       "orientation_count": 20,
       "render_count": 20
     },
@@ -4247,7 +4251,7 @@
       "dataset": "omni",
       "label": "chicken leg",
       "source_category": "chicken_leg",
-      "count": 14,
+      "count": 10,
       "orientation_count": 10,
       "render_count": 10
     },
@@ -4256,7 +4260,7 @@
       "dataset": "omni",
       "label": "chili",
       "source_category": "chili",
-      "count": 15,
+      "count": 10,
       "orientation_count": 10,
       "render_count": 10
     },
@@ -4265,7 +4269,7 @@
       "dataset": "omni",
       "label": "chinese chess",
       "source_category": "chinese_chess",
-      "count": 17,
+      "count": 13,
       "orientation_count": 13,
       "render_count": 13
     },
@@ -4274,7 +4278,7 @@
       "dataset": "omni",
       "label": "clock",
       "source_category": "clock",
-      "count": 48,
+      "count": 45,
       "orientation_count": 45,
       "render_count": 45
     },
@@ -4283,7 +4287,7 @@
       "dataset": "omni",
       "label": "coconut",
       "source_category": "coconut",
-      "count": 31,
+      "count": 29,
       "orientation_count": 29,
       "render_count": 29
     },
@@ -4292,7 +4296,7 @@
       "dataset": "omni",
       "label": "conch",
       "source_category": "conch",
-      "count": 31,
+      "count": 27,
       "orientation_count": 27,
       "render_count": 27
     },
@@ -4301,7 +4305,7 @@
       "dataset": "omni",
       "label": "corn",
       "source_category": "corn",
-      "count": 35,
+      "count": 29,
       "orientation_count": 29,
       "render_count": 29
     },
@@ -4310,7 +4314,7 @@
       "dataset": "omni",
       "label": "cucumber",
       "source_category": "cucumber",
-      "count": 9,
+      "count": 6,
       "orientation_count": 6,
       "render_count": 6
     },
@@ -4319,7 +4323,7 @@
       "dataset": "omni",
       "label": "cup",
       "source_category": "cup",
-      "count": 20,
+      "count": 17,
       "orientation_count": 17,
       "render_count": 17
     },
@@ -4328,7 +4332,7 @@
       "dataset": "omni",
       "label": "dice",
       "source_category": "dice",
-      "count": 19,
+      "count": 15,
       "orientation_count": 15,
       "render_count": 15
     },
@@ -4337,7 +4341,7 @@
       "dataset": "omni",
       "label": "dinosaur",
       "source_category": "dinosaur",
-      "count": 43,
+      "count": 39,
       "orientation_count": 39,
       "render_count": 39
     },
@@ -4346,7 +4350,7 @@
       "dataset": "omni",
       "label": "dish",
       "source_category": "dish",
-      "count": 52,
+      "count": 48,
       "orientation_count": 48,
       "render_count": 48
     },
@@ -4355,7 +4359,7 @@
       "dataset": "omni",
       "label": "doll",
       "source_category": "doll",
-      "count": 86,
+      "count": 83,
       "orientation_count": 83,
       "render_count": 83
     },
@@ -4364,7 +4368,7 @@
       "dataset": "omni",
       "label": "donut",
       "source_category": "donut",
-      "count": 22,
+      "count": 18,
       "orientation_count": 18,
       "render_count": 18
     },
@@ -4373,7 +4377,7 @@
       "dataset": "omni",
       "label": "drawing",
       "source_category": "drawing",
-      "count": 32,
+      "count": 27,
       "orientation_count": 27,
       "render_count": 27
     },
@@ -4382,7 +4386,7 @@
       "dataset": "omni",
       "label": "dumbbell",
       "source_category": "dumbbell",
-      "count": 21,
+      "count": 17,
       "orientation_count": 17,
       "render_count": 17
     },
@@ -4391,7 +4395,7 @@
       "dataset": "omni",
       "label": "dumpling",
       "source_category": "dumpling",
-      "count": 26,
+      "count": 22,
       "orientation_count": 22,
       "render_count": 22
     },
@@ -4400,7 +4404,7 @@
       "dataset": "omni",
       "label": "dustbin",
       "source_category": "dustbin",
-      "count": 23,
+      "count": 19,
       "orientation_count": 19,
       "render_count": 19
     },
@@ -4409,7 +4413,7 @@
       "dataset": "omni",
       "label": "egg",
       "source_category": "egg",
-      "count": 35,
+      "count": 32,
       "orientation_count": 32,
       "render_count": 32
     },
@@ -4418,7 +4422,7 @@
       "dataset": "omni",
       "label": "egg tart",
       "source_category": "egg_tart",
-      "count": 30,
+      "count": 26,
       "orientation_count": 26,
       "render_count": 26
     },
@@ -4427,7 +4431,7 @@
       "dataset": "omni",
       "label": "eraser",
       "source_category": "eraser",
-      "count": 31,
+      "count": 28,
       "orientation_count": 28,
       "render_count": 28
     },
@@ -4436,7 +4440,7 @@
       "dataset": "omni",
       "label": "facial cream",
       "source_category": "facial_cream",
-      "count": 42,
+      "count": 38,
       "orientation_count": 38,
       "render_count": 38
     },
@@ -4445,7 +4449,7 @@
       "dataset": "omni",
       "label": "fan",
       "source_category": "fan",
-      "count": 21,
+      "count": 16,
       "orientation_count": 16,
       "render_count": 16
     },
@@ -4454,7 +4458,7 @@
       "dataset": "omni",
       "label": "fire extinguisher",
       "source_category": "fire_extinguisher",
-      "count": 20,
+      "count": 17,
       "orientation_count": 17,
       "render_count": 17
     },
@@ -4463,7 +4467,7 @@
       "dataset": "omni",
       "label": "flash light",
       "source_category": "flash_light",
-      "count": 14,
+      "count": 7,
       "orientation_count": 7,
       "render_count": 7
     },
@@ -4472,7 +4476,7 @@
       "dataset": "omni",
       "label": "flower pot",
       "source_category": "flower_pot",
-      "count": 47,
+      "count": 43,
       "orientation_count": 43,
       "render_count": 43
     },
@@ -4481,7 +4485,7 @@
       "dataset": "omni",
       "label": "flute",
       "source_category": "flute",
-      "count": 6,
+      "count": 2,
       "orientation_count": 2,
       "render_count": 2
     },
@@ -4490,7 +4494,7 @@
       "dataset": "omni",
       "label": "fork",
       "source_category": "fork",
-      "count": 10,
+      "count": 6,
       "orientation_count": 6,
       "render_count": 6
     },
@@ -4499,7 +4503,7 @@
       "dataset": "omni",
       "label": "frisbee",
       "source_category": "frisbee",
-      "count": 10,
+      "count": 6,
       "orientation_count": 6,
       "render_count": 6
     },
@@ -4508,7 +4512,7 @@
       "dataset": "omni",
       "label": "garage kit",
       "source_category": "garage_kit",
-      "count": 79,
+      "count": 70,
       "orientation_count": 70,
       "render_count": 70
     },
@@ -4517,7 +4521,7 @@
       "dataset": "omni",
       "label": "garlic",
       "source_category": "garlic",
-      "count": 13,
+      "count": 8,
       "orientation_count": 8,
       "render_count": 8
     },
@@ -4526,7 +4530,7 @@
       "dataset": "omni",
       "label": "glasses",
       "source_category": "glasses",
-      "count": 9,
+      "count": 5,
       "orientation_count": 5,
       "render_count": 5
     },
@@ -4535,7 +4539,7 @@
       "dataset": "omni",
       "label": "glasses case",
       "source_category": "glasses_case",
-      "count": 40,
+      "count": 37,
       "orientation_count": 37,
       "render_count": 37
     },
@@ -4544,7 +4548,7 @@
       "dataset": "omni",
       "label": "guitar",
       "source_category": "guitar",
-      "count": 6,
+      "count": 2,
       "orientation_count": 2,
       "render_count": 2
     },
@@ -4553,7 +4557,7 @@
       "dataset": "omni",
       "label": "hair dryer",
       "source_category": "hair_dryer",
-      "count": 35,
+      "count": 30,
       "orientation_count": 30,
       "render_count": 30
     },
@@ -4562,7 +4566,7 @@
       "dataset": "omni",
       "label": "hairpin",
       "source_category": "hairpin",
-      "count": 20,
+      "count": 16,
       "orientation_count": 16,
       "render_count": 16
     },
@@ -4571,7 +4575,7 @@
       "dataset": "omni",
       "label": "hamburger",
       "source_category": "hamburger",
-      "count": 37,
+      "count": 33,
       "orientation_count": 33,
       "render_count": 33
     },
@@ -4580,7 +4584,7 @@
       "dataset": "omni",
       "label": "hami melon",
       "source_category": "hami_melon",
-      "count": 13,
+      "count": 10,
       "orientation_count": 10,
       "render_count": 10
     },
@@ -4589,7 +4593,7 @@
       "dataset": "omni",
       "label": "hammer",
       "source_category": "hammer",
-      "count": 23,
+      "count": 20,
       "orientation_count": 20,
       "render_count": 20
     },
@@ -4598,7 +4602,7 @@
       "dataset": "omni",
       "label": "hand cream",
       "source_category": "hand_cream",
-      "count": 40,
+      "count": 35,
       "orientation_count": 35,
       "render_count": 35
     },
@@ -4607,7 +4611,7 @@
       "dataset": "omni",
       "label": "handbag",
       "source_category": "handbag",
-      "count": 67,
+      "count": 63,
       "orientation_count": 63,
       "render_count": 63
     },
@@ -4616,7 +4620,7 @@
       "dataset": "omni",
       "label": "hat",
       "source_category": "hat",
-      "count": 26,
+      "count": 22,
       "orientation_count": 22,
       "render_count": 22
     },
@@ -4625,7 +4629,7 @@
       "dataset": "omni",
       "label": "helmet",
       "source_category": "helmet",
-      "count": 17,
+      "count": 14,
       "orientation_count": 14,
       "render_count": 14
     },
@@ -4634,7 +4638,7 @@
       "dataset": "omni",
       "label": "hot dog",
       "source_category": "hot_dog",
-      "count": 26,
+      "count": 22,
       "orientation_count": 22,
       "render_count": 22
     },
@@ -4643,7 +4647,7 @@
       "dataset": "omni",
       "label": "insole",
       "source_category": "insole",
-      "count": 18,
+      "count": 13,
       "orientation_count": 13,
       "render_count": 13
     },
@@ -4652,7 +4656,7 @@
       "dataset": "omni",
       "label": "kettle",
       "source_category": "kettle",
-      "count": 16,
+      "count": 12,
       "orientation_count": 12,
       "render_count": 12
     },
@@ -4661,7 +4665,7 @@
       "dataset": "omni",
       "label": "keyboard",
       "source_category": "keyboard",
-      "count": 23,
+      "count": 19,
       "orientation_count": 19,
       "render_count": 19
     },
@@ -4670,7 +4674,7 @@
       "dataset": "omni",
       "label": "knife",
       "source_category": "knife",
-      "count": 33,
+      "count": 29,
       "orientation_count": 29,
       "render_count": 29
     },
@@ -4679,7 +4683,7 @@
       "dataset": "omni",
       "label": "laptop",
       "source_category": "laptop",
-      "count": 21,
+      "count": 17,
       "orientation_count": 17,
       "render_count": 17
     },
@@ -4688,7 +4692,7 @@
       "dataset": "omni",
       "label": "laundry detergent",
       "source_category": "laundry_detergent",
-      "count": 16,
+      "count": 12,
       "orientation_count": 12,
       "render_count": 12
     },
@@ -4697,7 +4701,7 @@
       "dataset": "omni",
       "label": "lemon",
       "source_category": "lemon",
-      "count": 33,
+      "count": 29,
       "orientation_count": 29,
       "render_count": 29
     },
@@ -4706,7 +4710,7 @@
       "dataset": "omni",
       "label": "light",
       "source_category": "light",
-      "count": 36,
+      "count": 31,
       "orientation_count": 31,
       "render_count": 31
     },
@@ -4715,7 +4719,7 @@
       "dataset": "omni",
       "label": "lipstick",
       "source_category": "lipstick",
-      "count": 29,
+      "count": 24,
       "orientation_count": 24,
       "render_count": 24
     },
@@ -4724,7 +4728,7 @@
       "dataset": "omni",
       "label": "lotus root",
       "source_category": "lotus_root",
-      "count": 31,
+      "count": 27,
       "orientation_count": 27,
       "render_count": 27
     },
@@ -4733,7 +4737,7 @@
       "dataset": "omni",
       "label": "magnet",
       "source_category": "magnet",
-      "count": 8,
+      "count": 4,
       "orientation_count": 4,
       "render_count": 4
     },
@@ -4742,7 +4746,7 @@
       "dataset": "omni",
       "label": "mango",
       "source_category": "mango",
-      "count": 52,
+      "count": 48,
       "orientation_count": 48,
       "render_count": 48
     },
@@ -4751,7 +4755,7 @@
       "dataset": "omni",
       "label": "mangosteen",
       "source_category": "mangosteen",
-      "count": 33,
+      "count": 29,
       "orientation_count": 29,
       "render_count": 29
     },
@@ -4760,7 +4764,7 @@
       "dataset": "omni",
       "label": "medicine bottle",
       "source_category": "medicine_bottle",
-      "count": 117,
+      "count": 113,
       "orientation_count": 113,
       "render_count": 113
     },
@@ -4769,7 +4773,7 @@
       "dataset": "omni",
       "label": "microwaveoven",
       "source_category": "microwaveoven",
-      "count": 11,
+      "count": 8,
       "orientation_count": 8,
       "render_count": 8
     },
@@ -4778,7 +4782,7 @@
       "dataset": "omni",
       "label": "mooncake",
       "source_category": "mooncake",
-      "count": 15,
+      "count": 11,
       "orientation_count": 11,
       "render_count": 11
     },
@@ -4787,7 +4791,7 @@
       "dataset": "omni",
       "label": "mouse",
       "source_category": "mouse",
-      "count": 34,
+      "count": 30,
       "orientation_count": 30,
       "render_count": 30
     },
@@ -4796,7 +4800,7 @@
       "dataset": "omni",
       "label": "mug",
       "source_category": "mug",
-      "count": 36,
+      "count": 31,
       "orientation_count": 31,
       "render_count": 31
     },
@@ -4805,7 +4809,7 @@
       "dataset": "omni",
       "label": "onion",
       "source_category": "onion",
-      "count": 24,
+      "count": 20,
       "orientation_count": 20,
       "render_count": 20
     },
@@ -4814,7 +4818,7 @@
       "dataset": "omni",
       "label": "orange",
       "source_category": "orange",
-      "count": 32,
+      "count": 28,
       "orientation_count": 28,
       "render_count": 28
     },
@@ -4823,7 +4827,7 @@
       "dataset": "omni",
       "label": "pad",
       "source_category": "pad",
-      "count": 21,
+      "count": 15,
       "orientation_count": 15,
       "render_count": 15
     },
@@ -4832,7 +4836,7 @@
       "dataset": "omni",
       "label": "pan",
       "source_category": "pan",
-      "count": 8,
+      "count": 5,
       "orientation_count": 5,
       "render_count": 5
     },
@@ -4841,7 +4845,7 @@
       "dataset": "omni",
       "label": "pancake",
       "source_category": "pancake",
-      "count": 17,
+      "count": 12,
       "orientation_count": 12,
       "render_count": 12
     },
@@ -4850,7 +4854,7 @@
       "dataset": "omni",
       "label": "pastry",
       "source_category": "pastry",
-      "count": 19,
+      "count": 15,
       "orientation_count": 15,
       "render_count": 15
     },
@@ -4859,7 +4863,7 @@
       "dataset": "omni",
       "label": "peach",
       "source_category": "peach",
-      "count": 25,
+      "count": 21,
       "orientation_count": 21,
       "render_count": 21
     },
@@ -4868,7 +4872,7 @@
       "dataset": "omni",
       "label": "pear",
       "source_category": "pear",
-      "count": 29,
+      "count": 26,
       "orientation_count": 26,
       "render_count": 26
     },
@@ -4877,7 +4881,7 @@
       "dataset": "omni",
       "label": "pen",
       "source_category": "pen",
-      "count": 10,
+      "count": 6,
       "orientation_count": 6,
       "render_count": 6
     },
@@ -4886,7 +4890,7 @@
       "dataset": "omni",
       "label": "picnic basket",
       "source_category": "picnic_basket",
-      "count": 17,
+      "count": 14,
       "orientation_count": 14,
       "render_count": 14
     },
@@ -4895,7 +4899,7 @@
       "dataset": "omni",
       "label": "pie",
       "source_category": "pie",
-      "count": 26,
+      "count": 23,
       "orientation_count": 23,
       "render_count": 23
     },
@@ -4904,7 +4908,7 @@
       "dataset": "omni",
       "label": "pillow",
       "source_category": "pillow",
-      "count": 32,
+      "count": 28,
       "orientation_count": 28,
       "render_count": 28
     },
@@ -4913,7 +4917,7 @@
       "dataset": "omni",
       "label": "pineapple",
       "source_category": "pineapple",
-      "count": 20,
+      "count": 16,
       "orientation_count": 16,
       "render_count": 16
     },
@@ -4922,7 +4926,7 @@
       "dataset": "omni",
       "label": "pitaya",
       "source_category": "pitaya",
-      "count": 25,
+      "count": 22,
       "orientation_count": 22,
       "render_count": 22
     },
@@ -4931,7 +4935,7 @@
       "dataset": "omni",
       "label": "pizza",
       "source_category": "pizza",
-      "count": 22,
+      "count": 17,
       "orientation_count": 17,
       "render_count": 17
     },
@@ -4940,7 +4944,7 @@
       "dataset": "omni",
       "label": "plug",
       "source_category": "plug",
-      "count": 7,
+      "count": 2,
       "orientation_count": 2,
       "render_count": 2
     },
@@ -4949,7 +4953,7 @@
       "dataset": "omni",
       "label": "pomegranate",
       "source_category": "pomegranate",
-      "count": 49,
+      "count": 46,
       "orientation_count": 46,
       "render_count": 46
     },
@@ -4958,7 +4962,7 @@
       "dataset": "omni",
       "label": "power strip",
       "source_category": "power_strip",
-      "count": 32,
+      "count": 28,
       "orientation_count": 28,
       "render_count": 28
     },
@@ -4967,7 +4971,7 @@
       "dataset": "omni",
       "label": "projector",
       "source_category": "projector",
-      "count": 14,
+      "count": 10,
       "orientation_count": 10,
       "render_count": 10
     },
@@ -4976,7 +4980,7 @@
       "dataset": "omni",
       "label": "pumpkin",
       "source_category": "pumpkin",
-      "count": 23,
+      "count": 19,
       "orientation_count": 19,
       "render_count": 19
     },
@@ -4985,7 +4989,7 @@
       "dataset": "omni",
       "label": "razor",
       "source_category": "razor",
-      "count": 13,
+      "count": 9,
       "orientation_count": 9,
       "render_count": 9
     },
@@ -4994,7 +4998,7 @@
       "dataset": "omni",
       "label": "red wine glass",
       "source_category": "red_wine_glass",
-      "count": 15,
+      "count": 12,
       "orientation_count": 12,
       "render_count": 12
     },
@@ -5003,7 +5007,7 @@
       "dataset": "omni",
       "label": "remote control",
       "source_category": "remote_control",
-      "count": 55,
+      "count": 51,
       "orientation_count": 51,
       "render_count": 51
     },
@@ -5012,7 +5016,7 @@
       "dataset": "omni",
       "label": "ricecooker",
       "source_category": "ricecooker",
-      "count": 12,
+      "count": 8,
       "orientation_count": 8,
       "render_count": 8
     },
@@ -5021,7 +5025,7 @@
       "dataset": "omni",
       "label": "rubik cube",
       "source_category": "rubik_cube",
-      "count": 26,
+      "count": 22,
       "orientation_count": 22,
       "render_count": 22
     },
@@ -5030,7 +5034,7 @@
       "dataset": "omni",
       "label": "sausage",
       "source_category": "sausage",
-      "count": 54,
+      "count": 51,
       "orientation_count": 51,
       "render_count": 51
     },
@@ -5039,7 +5043,7 @@
       "dataset": "omni",
       "label": "scissor",
       "source_category": "scissor",
-      "count": 21,
+      "count": 16,
       "orientation_count": 16,
       "render_count": 16
     },
@@ -5048,7 +5052,7 @@
       "dataset": "omni",
       "label": "shampoo",
       "source_category": "shampoo",
-      "count": 42,
+      "count": 38,
       "orientation_count": 38,
       "render_count": 38
     },
@@ -5057,7 +5061,7 @@
       "dataset": "omni",
       "label": "shoe",
       "source_category": "shoe",
-      "count": 284,
+      "count": 281,
       "orientation_count": 281,
       "render_count": 281
     },
@@ -5066,7 +5070,7 @@
       "dataset": "omni",
       "label": "shrimp",
       "source_category": "shrimp",
-      "count": 45,
+      "count": 41,
       "orientation_count": 41,
       "render_count": 41
     },
@@ -5075,7 +5079,7 @@
       "dataset": "omni",
       "label": "soap",
       "source_category": "soap",
-      "count": 29,
+      "count": 25,
       "orientation_count": 25,
       "render_count": 25
     },
@@ -5084,7 +5088,7 @@
       "dataset": "omni",
       "label": "spanner",
       "source_category": "spanner",
-      "count": 9,
+      "count": 5,
       "orientation_count": 5,
       "render_count": 5
     },
@@ -5093,7 +5097,7 @@
       "dataset": "omni",
       "label": "speaker",
       "source_category": "speaker",
-      "count": 7,
+      "count": 3,
       "orientation_count": 3,
       "render_count": 3
     },
@@ -5102,7 +5106,7 @@
       "dataset": "omni",
       "label": "spoon",
       "source_category": "spoon",
-      "count": 9,
+      "count": 5,
       "orientation_count": 5,
       "render_count": 5
     },
@@ -5111,7 +5115,7 @@
       "dataset": "omni",
       "label": "starfish",
       "source_category": "starfish",
-      "count": 20,
+      "count": 16,
       "orientation_count": 16,
       "render_count": 16
     },
@@ -5120,7 +5124,7 @@
       "dataset": "omni",
       "label": "stool",
       "source_category": "stool",
-      "count": 12,
+      "count": 9,
       "orientation_count": 9,
       "render_count": 9
     },
@@ -5129,7 +5133,7 @@
       "dataset": "omni",
       "label": "suitcase",
       "source_category": "suitcase",
-      "count": 12,
+      "count": 9,
       "orientation_count": 9,
       "render_count": 9
     },
@@ -5138,7 +5142,7 @@
       "dataset": "omni",
       "label": "sweet potato",
       "source_category": "sweet_potato",
-      "count": 29,
+      "count": 25,
       "orientation_count": 25,
       "render_count": 25
     },
@@ -5147,7 +5151,7 @@
       "dataset": "omni",
       "label": "sword bean",
       "source_category": "sword_bean",
-      "count": 6,
+      "count": 2,
       "orientation_count": 2,
       "render_count": 2
     },
@@ -5165,7 +5169,7 @@
       "dataset": "omni",
       "label": "table tennis bat",
       "source_category": "table_tennis_bat",
-      "count": 23,
+      "count": 20,
       "orientation_count": 20,
       "render_count": 20
     },
@@ -5174,7 +5178,7 @@
       "dataset": "omni",
       "label": "tape measure",
       "source_category": "tape_measure",
-      "count": 21,
+      "count": 18,
       "orientation_count": 18,
       "render_count": 18
     },
@@ -5183,7 +5187,7 @@
       "dataset": "omni",
       "label": "teapot",
       "source_category": "teapot",
-      "count": 57,
+      "count": 53,
       "orientation_count": 53,
       "render_count": 53
     },
@@ -5192,7 +5196,7 @@
       "dataset": "omni",
       "label": "teddy bear",
       "source_category": "teddy_bear",
-      "count": 16,
+      "count": 12,
       "orientation_count": 12,
       "render_count": 12
     },
@@ -5201,7 +5205,7 @@
       "dataset": "omni",
       "label": "thermos",
       "source_category": "thermos",
-      "count": 10,
+      "count": 6,
       "orientation_count": 6,
       "render_count": 6
     },
@@ -5210,7 +5214,7 @@
       "dataset": "omni",
       "label": "timer",
       "source_category": "timer",
-      "count": 24,
+      "count": 20,
       "orientation_count": 20,
       "render_count": 20
     },
@@ -5219,7 +5223,7 @@
       "dataset": "omni",
       "label": "tissue",
       "source_category": "tissue",
-      "count": 56,
+      "count": 52,
       "orientation_count": 52,
       "render_count": 52
     },
@@ -5228,7 +5232,7 @@
       "dataset": "omni",
       "label": "tomato",
       "source_category": "tomato",
-      "count": 21,
+      "count": 17,
       "orientation_count": 17,
       "render_count": 17
     },
@@ -5237,7 +5241,7 @@
       "dataset": "omni",
       "label": "tooth brush",
       "source_category": "tooth_brush",
-      "count": 31,
+      "count": 27,
       "orientation_count": 27,
       "render_count": 27
     },
@@ -5246,7 +5250,7 @@
       "dataset": "omni",
       "label": "tooth paste",
       "source_category": "tooth_paste",
-      "count": 32,
+      "count": 28,
       "orientation_count": 28,
       "render_count": 28
     },
@@ -5255,7 +5259,7 @@
       "dataset": "omni",
       "label": "toy animals",
       "source_category": "toy_animals",
-      "count": 95,
+      "count": 91,
       "orientation_count": 91,
       "render_count": 91
     },
@@ -5264,7 +5268,7 @@
       "dataset": "omni",
       "label": "toy boat",
       "source_category": "toy_boat",
-      "count": 57,
+      "count": 53,
       "orientation_count": 53,
       "render_count": 53
     },
@@ -5273,7 +5277,7 @@
       "dataset": "omni",
       "label": "toy bus",
       "source_category": "toy_bus",
-      "count": 70,
+      "count": 66,
       "orientation_count": 66,
       "render_count": 66
     },
@@ -5282,7 +5286,7 @@
       "dataset": "omni",
       "label": "toy car",
       "source_category": "toy_car",
-      "count": 37,
+      "count": 34,
       "orientation_count": 34,
       "render_count": 34
     },
@@ -5291,7 +5295,7 @@
       "dataset": "omni",
       "label": "toy motorcycle",
       "source_category": "toy_motorcycle",
-      "count": 40,
+      "count": 36,
       "orientation_count": 36,
       "render_count": 36
     },
@@ -5300,7 +5304,7 @@
       "dataset": "omni",
       "label": "toy plane",
       "source_category": "toy_plane",
-      "count": 37,
+      "count": 33,
       "orientation_count": 33,
       "render_count": 33
     },
@@ -5309,7 +5313,7 @@
       "dataset": "omni",
       "label": "toy plant",
       "source_category": "toy_plant",
-      "count": 11,
+      "count": 9,
       "orientation_count": 9,
       "render_count": 9
     },
@@ -5318,7 +5322,7 @@
       "dataset": "omni",
       "label": "toy train",
       "source_category": "toy_train",
-      "count": 63,
+      "count": 58,
       "orientation_count": 58,
       "render_count": 58
     },
@@ -5327,7 +5331,7 @@
       "dataset": "omni",
       "label": "toy truck",
       "source_category": "toy_truck",
-      "count": 51,
+      "count": 47,
       "orientation_count": 47,
       "render_count": 47
     },
@@ -5336,7 +5340,7 @@
       "dataset": "omni",
       "label": "umbrella",
       "source_category": "umbrella",
-      "count": 23,
+      "count": 20,
       "orientation_count": 20,
       "render_count": 20
     },
@@ -5345,7 +5349,7 @@
       "dataset": "omni",
       "label": "vase",
       "source_category": "vase",
-      "count": 13,
+      "count": 9,
       "orientation_count": 9,
       "render_count": 9
     },
@@ -5354,7 +5358,7 @@
       "dataset": "omni",
       "label": "waffle",
       "source_category": "waffle",
-      "count": 25,
+      "count": 22,
       "orientation_count": 22,
       "render_count": 22
     },
@@ -5363,7 +5367,7 @@
       "dataset": "omni",
       "label": "wallet",
       "source_category": "wallet",
-      "count": 36,
+      "count": 32,
       "orientation_count": 32,
       "render_count": 32
     },
@@ -5372,7 +5376,7 @@
       "dataset": "omni",
       "label": "watch",
       "source_category": "watch",
-      "count": 13,
+      "count": 10,
       "orientation_count": 10,
       "render_count": 10
     },
@@ -5381,7 +5385,7 @@
       "dataset": "omni",
       "label": "watermelon",
       "source_category": "watermelon",
-      "count": 8,
+      "count": 5,
       "orientation_count": 5,
       "render_count": 5
     },
@@ -5390,7 +5394,7 @@
       "dataset": "omni",
       "label": "whistle",
       "source_category": "whistle",
-      "count": 23,
+      "count": 18,
       "orientation_count": 18,
       "render_count": 18
     },
@@ -5400,8 +5404,9 @@
       "label": "Bar",
       "source_category": "Bar",
       "count": 47,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 47,
+      "render_count": 47,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-1c1576233e",
@@ -5409,8 +5414,9 @@
       "label": "Barstool",
       "source_category": "Barstool",
       "count": 191,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 191,
+      "render_count": 191,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-f700633c9b",
@@ -5418,8 +5424,9 @@
       "label": "Bed Frame",
       "source_category": "Bed Frame",
       "count": 203,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 203,
+      "render_count": 203,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-c4a4244781",
@@ -5427,8 +5434,9 @@
       "label": "Bookcase / jewelry Armoire",
       "source_category": "Bookcase / jewelry Armoire",
       "count": 439,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 439,
+      "render_count": 439,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-bbbfe01151",
@@ -5436,8 +5444,9 @@
       "label": "Bunk Bed",
       "source_category": "Bunk Bed",
       "count": 66,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 66,
+      "render_count": 66,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-cde7ebf3be",
@@ -5445,8 +5454,9 @@
       "label": "Ceiling Lamp",
       "source_category": "Ceiling Lamp",
       "count": 512,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 512,
+      "render_count": 512,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-c8de4f8b49",
@@ -5454,8 +5464,9 @@
       "label": "Chaise Longue Sofa",
       "source_category": "Chaise Longue Sofa",
       "count": 25,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 25,
+      "render_count": 25,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-6861085623",
@@ -5463,8 +5474,9 @@
       "label": "Children Cabinet",
       "source_category": "Children Cabinet",
       "count": 352,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 352,
+      "render_count": 352,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-72dd8652b4",
@@ -5472,8 +5484,9 @@
       "label": "Classic Chinese Chair",
       "source_category": "Classic Chinese Chair",
       "count": 16,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 16,
+      "render_count": 16,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-9ee3c1bd7a",
@@ -5481,8 +5494,9 @@
       "label": "Coffee Table",
       "source_category": "Coffee Table",
       "count": 684,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 684,
+      "render_count": 683,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-884069e476",
@@ -5490,8 +5504,9 @@
       "label": "Corner/Side Table",
       "source_category": "Corner/Side Table",
       "count": 718,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 718,
+      "render_count": 718,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-aee3f06571",
@@ -5499,8 +5514,9 @@
       "label": "Couch Bed",
       "source_category": "Couch Bed",
       "count": 14,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 14,
+      "render_count": 14,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-5f9a85846f",
@@ -5508,8 +5524,9 @@
       "label": "Desk",
       "source_category": "Desk",
       "count": 356,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 356,
+      "render_count": 356,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-fe71062806",
@@ -5517,8 +5534,9 @@
       "label": "Dining Chair",
       "source_category": "Dining Chair",
       "count": 543,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 543,
+      "render_count": 542,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-33cbf9b3bf",
@@ -5526,8 +5544,9 @@
       "label": "Dining Table",
       "source_category": "Dining Table",
       "count": 517,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 517,
+      "render_count": 517,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-3d75ee7ab5",
@@ -5535,8 +5554,9 @@
       "label": "Double Bed",
       "source_category": "Double Bed",
       "count": 141,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 141,
+      "render_count": 141,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-6be0da1d9e",
@@ -5544,8 +5564,9 @@
       "label": "Drawer Chest / Corner cabinet",
       "source_category": "Drawer Chest / Corner cabinet",
       "count": 509,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 509,
+      "render_count": 509,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-6babfccbb4",
@@ -5553,8 +5574,9 @@
       "label": "Dressing Chair",
       "source_category": "Dressing Chair",
       "count": 75,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 75,
+      "render_count": 75,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-f6433f008c",
@@ -5562,8 +5584,9 @@
       "label": "Dressing Table",
       "source_category": "Dressing Table",
       "count": 142,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 142,
+      "render_count": 142,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-2fd6607501",
@@ -5571,8 +5594,9 @@
       "label": "Floor Lamp",
       "source_category": "Floor Lamp",
       "count": 252,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 252,
+      "render_count": 252,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-8681299a95",
@@ -5580,8 +5604,9 @@
       "label": "Folding chair",
       "source_category": "Folding chair",
       "count": 26,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 26,
+      "render_count": 26,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-90b6197a70",
@@ -5589,8 +5614,9 @@
       "label": "Footstool / Sofastool / Bed End Stool / Stool",
       "source_category": "Footstool / Sofastool / Bed End Stool / Stool",
       "count": 570,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 570,
+      "render_count": 570,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-7823b15891",
@@ -5598,8 +5624,9 @@
       "label": "Hanging Chair",
       "source_category": "Hanging Chair",
       "count": 14,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 14,
+      "render_count": 14,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-1cae656a4c",
@@ -5607,8 +5634,9 @@
       "label": "Kids Bed",
       "source_category": "Kids Bed",
       "count": 118,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 118,
+      "render_count": 118,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-762f0665f9",
@@ -5616,8 +5644,9 @@
       "label": "King-size Bed",
       "source_category": "King-size Bed",
       "count": 440,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 440,
+      "render_count": 440,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-697950de27",
@@ -5625,8 +5654,9 @@
       "label": "L-shaped Sofa",
       "source_category": "L-shaped Sofa",
       "count": 245,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 245,
+      "render_count": 245,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-aa1c967665",
@@ -5634,8 +5664,9 @@
       "label": "Lazy Sofa",
       "source_category": "Lazy Sofa",
       "count": 112,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 112,
+      "render_count": 112,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-3cea8b0002",
@@ -5643,8 +5674,9 @@
       "label": "Lounge Chair / Book-chair / Computer Chair",
       "source_category": "Lounge Chair / Book-chair / Computer Chair",
       "count": 325,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 325,
+      "render_count": 325,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-6bde482f33",
@@ -5652,8 +5684,9 @@
       "label": "Lounge Chair / Cafe Chair / Office Chair",
       "source_category": "Lounge Chair / Cafe Chair / Office Chair",
       "count": 585,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 585,
+      "render_count": 585,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-903256d3b4",
@@ -5661,8 +5694,9 @@
       "label": "Loveseat Sofa",
       "source_category": "Loveseat Sofa",
       "count": 472,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 472,
+      "render_count": 472,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-e83fcb09e3",
@@ -5670,8 +5704,9 @@
       "label": "Nightstand",
       "source_category": "Nightstand",
       "count": 538,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 538,
+      "render_count": 538,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-bf7e471277",
@@ -5679,8 +5714,9 @@
       "label": "Pendant Lamp",
       "source_category": "Pendant Lamp",
       "count": 1152,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 1152,
+      "render_count": 1151,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-bd0ccc4727",
@@ -5688,8 +5724,9 @@
       "label": "Round End Table",
       "source_category": "Round End Table",
       "count": 99,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 99,
+      "render_count": 99,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-1bf5eaa62f",
@@ -5697,8 +5734,9 @@
       "label": "Shelf",
       "source_category": "Shelf",
       "count": 275,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 275,
+      "render_count": 275,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-86debb4a48",
@@ -5706,8 +5744,9 @@
       "label": "Shoe Cabinet",
       "source_category": "Shoe Cabinet",
       "count": 83,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 83,
+      "render_count": 83,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-a766a5d730",
@@ -5715,8 +5754,9 @@
       "label": "Sideboard / Side Cabinet / Console",
       "source_category": "Sideboard / Side Cabinet / Console",
       "count": 244,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 244,
+      "render_count": 244,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-f3ac902068",
@@ -5724,8 +5764,9 @@
       "label": "Sideboard / Side Cabinet / Console Table",
       "source_category": "Sideboard / Side Cabinet / Console Table",
       "count": 458,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 458,
+      "render_count": 458,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-aae641454f",
@@ -5733,8 +5774,9 @@
       "label": "Single bed",
       "source_category": "Single bed",
       "count": 135,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 135,
+      "render_count": 135,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-baafac8a51",
@@ -5742,8 +5784,9 @@
       "label": "TV Stand",
       "source_category": "TV Stand",
       "count": 529,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 529,
+      "render_count": 529,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-0c2be535d4",
@@ -5751,8 +5794,9 @@
       "label": "Tea Table",
       "source_category": "Tea Table",
       "count": 120,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 120,
+      "render_count": 120,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-ff2f5c4877",
@@ -5760,8 +5804,9 @@
       "label": "Three-Seat / Multi-person sofa",
       "source_category": "Three-Seat / Multi-person sofa",
       "count": 129,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 129,
+      "render_count": 129,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-8041ede403",
@@ -5769,8 +5814,9 @@
       "label": "Three-Seat / Multi-seat Sofa",
       "source_category": "Three-Seat / Multi-seat Sofa",
       "count": 852,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 852,
+      "render_count": 852,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-d5be33c342",
@@ -5778,8 +5824,9 @@
       "label": "Two-seat Sofa",
       "source_category": "Two-seat Sofa",
       "count": 22,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 22,
+      "render_count": 22,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-1cf7da5165",
@@ -5787,8 +5834,9 @@
       "label": "U-shaped Sofa",
       "source_category": "U-shaped Sofa",
       "count": 10,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 10,
+      "render_count": 10,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-95d90c6329",
@@ -5796,8 +5844,9 @@
       "label": "Wall Lamp",
       "source_category": "Wall Lamp",
       "count": 5,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 5,
+      "render_count": 5,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-5da5f57d19",
@@ -5805,8 +5854,9 @@
       "label": "Wardrobe",
       "source_category": "Wardrobe",
       "count": 476,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 476,
+      "render_count": 476,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-762601b2ed",
@@ -5814,8 +5864,9 @@
       "label": "Wine Cabinet",
       "source_category": "Wine Cabinet",
       "count": 114,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 114,
+      "render_count": 114,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-87484468f6",
@@ -5823,8 +5874,9 @@
       "label": "Wine Cooler",
       "source_category": "Wine Cooler",
       "count": 111,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 111,
+      "render_count": 111,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "future-2e3faf150d",
@@ -5832,15 +5884,16 @@
       "label": "armchair",
       "source_category": "armchair",
       "count": 751,
-      "orientation_count": null,
-      "render_count": null
+      "orientation_count": 751,
+      "render_count": 751,
+      "orientation_basis": "Nonempty canonical mesh exports; complete category count matches the filtered inventory."
     },
     {
       "id": "hssd-9a6597fe39",
       "dataset": "hssd",
       "label": "showerhead",
       "source_category": "showerhead",
-      "count": 17,
+      "count": 16,
       "orientation_count": null,
       "render_count": null
     },
@@ -5849,7 +5902,7 @@
       "dataset": "hssd",
       "label": "cup",
       "source_category": "cup",
-      "count": 184,
+      "count": 153,
       "orientation_count": null,
       "render_count": null
     },
@@ -5858,7 +5911,7 @@
       "dataset": "hssd",
       "label": "bin",
       "source_category": "bin",
-      "count": 100,
+      "count": 88,
       "orientation_count": null,
       "render_count": null
     },
@@ -5867,7 +5920,7 @@
       "dataset": "hssd",
       "label": "cabinet",
       "source_category": "cabinet",
-      "count": 871,
+      "count": 737,
       "orientation_count": null,
       "render_count": null
     },
@@ -5876,7 +5929,7 @@
       "dataset": "hssd",
       "label": "clock",
       "source_category": "clock",
-      "count": 157,
+      "count": 139,
       "orientation_count": null,
       "render_count": null
     },
@@ -5885,7 +5938,7 @@
       "dataset": "hssd",
       "label": "pillow",
       "source_category": "pillow",
-      "count": 525,
+      "count": 441,
       "orientation_count": null,
       "render_count": null
     },
@@ -5894,7 +5947,7 @@
       "dataset": "hssd",
       "label": "table",
       "source_category": "table",
-      "count": 1094,
+      "count": 889,
       "orientation_count": null,
       "render_count": null
     },
@@ -5903,7 +5956,7 @@
       "dataset": "hssd",
       "label": "lamp",
       "source_category": "lamp",
-      "count": 1110,
+      "count": 910,
       "orientation_count": null,
       "render_count": null
     },
@@ -5912,7 +5965,7 @@
       "dataset": "hssd",
       "label": "bench",
       "source_category": "bench",
-      "count": 165,
+      "count": 137,
       "orientation_count": null,
       "render_count": null
     },
@@ -5921,7 +5974,7 @@
       "dataset": "hssd",
       "label": "vase",
       "source_category": "vase",
-      "count": 269,
+      "count": 225,
       "orientation_count": null,
       "render_count": null
     },
@@ -5930,7 +5983,7 @@
       "dataset": "hssd",
       "label": "carpet",
       "source_category": "carpet",
-      "count": 881,
+      "count": 744,
       "orientation_count": null,
       "render_count": null
     },
@@ -5939,7 +5992,7 @@
       "dataset": "hssd",
       "label": "painting",
       "source_category": "painting",
-      "count": 103,
+      "count": 93,
       "orientation_count": null,
       "render_count": null
     },
@@ -5948,7 +6001,7 @@
       "dataset": "hssd",
       "label": "floor mat",
       "source_category": "floor_mat",
-      "count": 7,
+      "count": 6,
       "orientation_count": null,
       "render_count": null
     },
@@ -5957,7 +6010,7 @@
       "dataset": "hssd",
       "label": "picture",
       "source_category": "picture",
-      "count": 1178,
+      "count": 1029,
       "orientation_count": null,
       "render_count": null
     },
@@ -5966,7 +6019,7 @@
       "dataset": "hssd",
       "label": "plate",
       "source_category": "plate",
-      "count": 64,
+      "count": 54,
       "orientation_count": null,
       "render_count": null
     },
@@ -5975,7 +6028,7 @@
       "dataset": "hssd",
       "label": "decoration",
       "source_category": "decoration",
-      "count": 636,
+      "count": 550,
       "orientation_count": null,
       "render_count": null
     },
@@ -5984,7 +6037,7 @@
       "dataset": "hssd",
       "label": "candle",
       "source_category": "candle",
-      "count": 159,
+      "count": 130,
       "orientation_count": null,
       "render_count": null
     },
@@ -5993,7 +6046,7 @@
       "dataset": "hssd",
       "label": "seat",
       "source_category": "seat",
-      "count": 1324,
+      "count": 1048,
       "orientation_count": null,
       "render_count": null
     },
@@ -6002,7 +6055,7 @@
       "dataset": "hssd",
       "label": "bed",
       "source_category": "bed",
-      "count": 442,
+      "count": 357,
       "orientation_count": null,
       "render_count": null
     },
@@ -6011,7 +6064,7 @@
       "dataset": "hssd",
       "label": "jar",
       "source_category": "jar",
-      "count": 20,
+      "count": 13,
       "orientation_count": null,
       "render_count": null
     },
@@ -6029,7 +6082,7 @@
       "dataset": "hssd",
       "label": "counter",
       "source_category": "counter",
-      "count": 58,
+      "count": 50,
       "orientation_count": null,
       "render_count": null
     },
@@ -6047,7 +6100,7 @@
       "dataset": "hssd",
       "label": "balcony",
       "source_category": "balcony",
-      "count": 5,
+      "count": 4,
       "orientation_count": null,
       "render_count": null
     },
@@ -6056,7 +6109,7 @@
       "dataset": "hssd",
       "label": "fan",
       "source_category": "fan",
-      "count": 6,
+      "count": 5,
       "orientation_count": null,
       "render_count": null
     },
@@ -6065,7 +6118,7 @@
       "dataset": "hssd",
       "label": "mirror",
       "source_category": "mirror",
-      "count": 394,
+      "count": 345,
       "orientation_count": null,
       "render_count": null
     },
@@ -6074,7 +6127,7 @@
       "dataset": "hssd",
       "label": "laundry basket",
       "source_category": "laundry_basket",
-      "count": 18,
+      "count": 16,
       "orientation_count": null,
       "render_count": null
     },
@@ -6083,7 +6136,7 @@
       "dataset": "hssd",
       "label": "bowl",
       "source_category": "bowl",
-      "count": 87,
+      "count": 75,
       "orientation_count": null,
       "render_count": null
     },
@@ -6092,7 +6145,7 @@
       "dataset": "hssd",
       "label": "book rack",
       "source_category": "book_rack",
-      "count": 30,
+      "count": 28,
       "orientation_count": null,
       "render_count": null
     },
@@ -6101,7 +6154,7 @@
       "dataset": "hssd",
       "label": "book",
       "source_category": "book",
-      "count": 1138,
+      "count": 1082,
       "orientation_count": null,
       "render_count": null
     },
@@ -6110,7 +6163,7 @@
       "dataset": "hssd",
       "label": "tap",
       "source_category": "tap",
-      "count": 41,
+      "count": 33,
       "orientation_count": null,
       "render_count": null
     },
@@ -6119,7 +6172,7 @@
       "dataset": "hssd",
       "label": "christmas tree",
       "source_category": "christmas_tree",
-      "count": 5,
+      "count": 4,
       "orientation_count": null,
       "render_count": null
     },
@@ -6128,7 +6181,7 @@
       "dataset": "hssd",
       "label": "kitchen appliance",
       "source_category": "kitchen_appliance",
-      "count": 56,
+      "count": 46,
       "orientation_count": null,
       "render_count": null
     },
@@ -6137,7 +6190,7 @@
       "dataset": "hssd",
       "label": "washer/dryer",
       "source_category": "washer/dryer",
-      "count": 24,
+      "count": 22,
       "orientation_count": null,
       "render_count": null
     },
@@ -6146,7 +6199,7 @@
       "dataset": "hssd",
       "label": "laptop",
       "source_category": "laptop",
-      "count": 24,
+      "count": 22,
       "orientation_count": null,
       "render_count": null
     },
@@ -6155,7 +6208,7 @@
       "dataset": "hssd",
       "label": "umbrella",
       "source_category": "umbrella",
-      "count": 21,
+      "count": 19,
       "orientation_count": null,
       "render_count": null
     },
@@ -6164,7 +6217,7 @@
       "dataset": "hssd",
       "label": "couch",
       "source_category": "couch",
-      "count": 357,
+      "count": 291,
       "orientation_count": null,
       "render_count": null
     },
@@ -6173,7 +6226,7 @@
       "dataset": "hssd",
       "label": "picture frame",
       "source_category": "picture_frame",
-      "count": 71,
+      "count": 63,
       "orientation_count": null,
       "render_count": null
     },
@@ -6182,7 +6235,7 @@
       "dataset": "hssd",
       "label": "bottle",
       "source_category": "bottle",
-      "count": 78,
+      "count": 71,
       "orientation_count": null,
       "render_count": null
     },
@@ -6191,7 +6244,7 @@
       "dataset": "hssd",
       "label": "flowerpot",
       "source_category": "flowerpot",
-      "count": 141,
+      "count": 117,
       "orientation_count": null,
       "render_count": null
     },
@@ -6200,7 +6253,7 @@
       "dataset": "hssd",
       "label": "shelf",
       "source_category": "shelf",
-      "count": 364,
+      "count": 316,
       "orientation_count": null,
       "render_count": null
     },
@@ -6218,7 +6271,7 @@
       "dataset": "hssd",
       "label": "swing",
       "source_category": "swing",
-      "count": 24,
+      "count": 19,
       "orientation_count": null,
       "render_count": null
     },
@@ -6227,7 +6280,7 @@
       "dataset": "hssd",
       "label": "knife",
       "source_category": "knife",
-      "count": 2,
+      "count": 1,
       "orientation_count": null,
       "render_count": null
     },
@@ -6236,7 +6289,7 @@
       "dataset": "hssd",
       "label": "towel",
       "source_category": "towel",
-      "count": 82,
+      "count": 66,
       "orientation_count": null,
       "render_count": null
     },
@@ -6245,7 +6298,7 @@
       "dataset": "hssd",
       "label": "rack",
       "source_category": "rack",
-      "count": 152,
+      "count": 135,
       "orientation_count": null,
       "render_count": null
     },
@@ -6254,7 +6307,7 @@
       "dataset": "hssd",
       "label": "desk",
       "source_category": "desk",
-      "count": 116,
+      "count": 96,
       "orientation_count": null,
       "render_count": null
     },
@@ -6272,7 +6325,7 @@
       "dataset": "hssd",
       "label": "drawer",
       "source_category": "drawer",
-      "count": 50,
+      "count": 42,
       "orientation_count": null,
       "render_count": null
     },
@@ -6281,7 +6334,7 @@
       "dataset": "hssd",
       "label": "unknown",
       "source_category": "unknown",
-      "count": 183,
+      "count": 151,
       "orientation_count": null,
       "render_count": null
     },
@@ -6299,7 +6352,7 @@
       "dataset": "hssd",
       "label": "doormat",
       "source_category": "doormat",
-      "count": 22,
+      "count": 20,
       "orientation_count": null,
       "render_count": null
     },
@@ -6317,7 +6370,7 @@
       "dataset": "hssd",
       "label": "curtain",
       "source_category": "curtain",
-      "count": 156,
+      "count": 135,
       "orientation_count": null,
       "render_count": null
     },
@@ -6326,7 +6379,7 @@
       "dataset": "hssd",
       "label": "chandelier",
       "source_category": "chandelier",
-      "count": 47,
+      "count": 43,
       "orientation_count": null,
       "render_count": null
     },
@@ -6335,7 +6388,7 @@
       "dataset": "hssd",
       "label": "fridge",
       "source_category": "fridge",
-      "count": 56,
+      "count": 50,
       "orientation_count": null,
       "render_count": null
     },
@@ -6344,7 +6397,7 @@
       "dataset": "hssd",
       "label": "stand",
       "source_category": "stand",
-      "count": 64,
+      "count": 51,
       "orientation_count": null,
       "render_count": null
     },
@@ -6353,7 +6406,7 @@
       "dataset": "hssd",
       "label": "stool",
       "source_category": "stool",
-      "count": 227,
+      "count": 194,
       "orientation_count": null,
       "render_count": null
     },
@@ -6362,7 +6415,7 @@
       "dataset": "hssd",
       "label": "shower",
       "source_category": "shower",
-      "count": 67,
+      "count": 58,
       "orientation_count": null,
       "render_count": null
     },
@@ -6380,16 +6433,7 @@
       "dataset": "hssd",
       "label": "tablecloth",
       "source_category": "tablecloth",
-      "count": 11,
-      "orientation_count": null,
-      "render_count": null
-    },
-    {
-      "id": "hssd-f2706672cd",
-      "dataset": "hssd",
-      "label": "#N/A",
-      "source_category": "#N/A",
-      "count": 43,
+      "count": 10,
       "orientation_count": null,
       "render_count": null
     },
@@ -6398,7 +6442,7 @@
       "dataset": "hssd",
       "label": "basket",
       "source_category": "basket",
-      "count": 107,
+      "count": 95,
       "orientation_count": null,
       "render_count": null
     },
@@ -6407,7 +6451,7 @@
       "dataset": "hssd",
       "label": "bush",
       "source_category": "bush",
-      "count": 11,
+      "count": 9,
       "orientation_count": null,
       "render_count": null
     },
@@ -6425,7 +6469,7 @@
       "dataset": "hssd",
       "label": "pot",
       "source_category": "pot",
-      "count": 43,
+      "count": 35,
       "orientation_count": null,
       "render_count": null
     },
@@ -6434,7 +6478,7 @@
       "dataset": "hssd",
       "label": "sofa set",
       "source_category": "sofa_set",
-      "count": 16,
+      "count": 15,
       "orientation_count": null,
       "render_count": null
     },
@@ -6452,7 +6496,7 @@
       "dataset": "hssd",
       "label": "window shade",
       "source_category": "window_shade",
-      "count": 35,
+      "count": 28,
       "orientation_count": null,
       "render_count": null
     },
@@ -6461,7 +6505,7 @@
       "dataset": "hssd",
       "label": "ladder",
       "source_category": "ladder",
-      "count": 16,
+      "count": 14,
       "orientation_count": null,
       "render_count": null
     },
@@ -6470,7 +6514,7 @@
       "dataset": "hssd",
       "label": "tree",
       "source_category": "tree",
-      "count": 47,
+      "count": 45,
       "orientation_count": null,
       "render_count": null
     },
@@ -6479,7 +6523,7 @@
       "dataset": "hssd",
       "label": "chest",
       "source_category": "chest",
-      "count": 26,
+      "count": 19,
       "orientation_count": null,
       "render_count": null
     },
@@ -6488,7 +6532,7 @@
       "dataset": "hssd",
       "label": "case",
       "source_category": "case",
-      "count": 14,
+      "count": 8,
       "orientation_count": null,
       "render_count": null
     },
@@ -6497,7 +6541,7 @@
       "dataset": "hssd",
       "label": "box",
       "source_category": "box",
-      "count": 138,
+      "count": 120,
       "orientation_count": null,
       "render_count": null
     },
@@ -6506,7 +6550,7 @@
       "dataset": "hssd",
       "label": "coat hanger",
       "source_category": "coat_hanger",
-      "count": 38,
+      "count": 27,
       "orientation_count": null,
       "render_count": null
     },
@@ -6524,7 +6568,7 @@
       "dataset": "hssd",
       "label": "bathtub",
       "source_category": "bathtub",
-      "count": 95,
+      "count": 83,
       "orientation_count": null,
       "render_count": null
     },
@@ -6533,7 +6577,7 @@
       "dataset": "hssd",
       "label": "sink cabinet",
       "source_category": "sink_cabinet",
-      "count": 87,
+      "count": 78,
       "orientation_count": null,
       "render_count": null
     },
@@ -6542,7 +6586,7 @@
       "dataset": "hssd",
       "label": "toy",
       "source_category": "toy",
-      "count": 85,
+      "count": 80,
       "orientation_count": null,
       "render_count": null
     },
@@ -6551,7 +6595,7 @@
       "dataset": "hssd",
       "label": "electric outlet",
       "source_category": "electric_outlet",
-      "count": 6,
+      "count": 4,
       "orientation_count": null,
       "render_count": null
     },
@@ -6578,7 +6622,7 @@
       "dataset": "hssd",
       "label": "wardrobe",
       "source_category": "wardrobe",
-      "count": 176,
+      "count": 150,
       "orientation_count": null,
       "render_count": null
     },
@@ -6587,7 +6631,7 @@
       "dataset": "hssd",
       "label": "statue",
       "source_category": "statue",
-      "count": 29,
+      "count": 22,
       "orientation_count": null,
       "render_count": null
     },
@@ -6605,7 +6649,7 @@
       "dataset": "hssd",
       "label": "crib",
       "source_category": "crib",
-      "count": 13,
+      "count": 10,
       "orientation_count": null,
       "render_count": null
     },
@@ -6623,7 +6667,7 @@
       "dataset": "hssd",
       "label": "toilet",
       "source_category": "toilet",
-      "count": 73,
+      "count": 65,
       "orientation_count": null,
       "render_count": null
     },
@@ -6632,7 +6676,7 @@
       "dataset": "hssd",
       "label": "gym equipment",
       "source_category": "gym_equipment",
-      "count": 65,
+      "count": 56,
       "orientation_count": null,
       "render_count": null
     },
@@ -6650,7 +6694,7 @@
       "dataset": "hssd",
       "label": "fireplace",
       "source_category": "fireplace",
-      "count": 40,
+      "count": 34,
       "orientation_count": null,
       "render_count": null
     },
@@ -6659,7 +6703,7 @@
       "dataset": "hssd",
       "label": "speaker",
       "source_category": "speaker",
-      "count": 14,
+      "count": 12,
       "orientation_count": null,
       "render_count": null
     },
@@ -6668,7 +6712,7 @@
       "dataset": "hssd",
       "label": "toilet brush",
       "source_category": "toilet_brush",
-      "count": 24,
+      "count": 20,
       "orientation_count": null,
       "render_count": null
     },
@@ -6677,7 +6721,7 @@
       "dataset": "hssd",
       "label": "clothes",
       "source_category": "clothes",
-      "count": 28,
+      "count": 27,
       "orientation_count": null,
       "render_count": null
     },
@@ -6686,7 +6730,7 @@
       "dataset": "hssd",
       "label": "board",
       "source_category": "board",
-      "count": 34,
+      "count": 29,
       "orientation_count": null,
       "render_count": null
     },
@@ -6695,7 +6739,7 @@
       "dataset": "hssd",
       "label": "fence",
       "source_category": "fence",
-      "count": 18,
+      "count": 16,
       "orientation_count": null,
       "render_count": null
     },
@@ -6704,7 +6748,7 @@
       "dataset": "hssd",
       "label": "tray",
       "source_category": "tray",
-      "count": 64,
+      "count": 53,
       "orientation_count": null,
       "render_count": null
     },
@@ -6713,7 +6757,7 @@
       "dataset": "hssd",
       "label": "grill",
       "source_category": "grill",
-      "count": 20,
+      "count": 16,
       "orientation_count": null,
       "render_count": null
     },
@@ -6722,7 +6766,7 @@
       "dataset": "hssd",
       "label": "shoe",
       "source_category": "shoe",
-      "count": 50,
+      "count": 48,
       "orientation_count": null,
       "render_count": null
     },
@@ -6758,7 +6802,7 @@
       "dataset": "hssd",
       "label": "door",
       "source_category": "door",
-      "count": 32,
+      "count": 30,
       "orientation_count": null,
       "render_count": null
     },
@@ -6767,7 +6811,7 @@
       "dataset": "hssd",
       "label": "sink",
       "source_category": "sink",
-      "count": 45,
+      "count": 33,
       "orientation_count": null,
       "render_count": null
     },
@@ -6812,7 +6856,7 @@
       "dataset": "hssd",
       "label": "storage",
       "source_category": "storage",
-      "count": 2,
+      "count": 1,
       "orientation_count": null,
       "render_count": null
     },
@@ -6821,7 +6865,7 @@
       "dataset": "hssd",
       "label": "coffee maker",
       "source_category": "coffee_maker",
-      "count": 17,
+      "count": 16,
       "orientation_count": null,
       "render_count": null
     },
@@ -6830,7 +6874,7 @@
       "dataset": "hssd",
       "label": "shower tap",
       "source_category": "shower_tap",
-      "count": 25,
+      "count": 18,
       "orientation_count": null,
       "render_count": null
     },
@@ -6839,7 +6883,7 @@
       "dataset": "hssd",
       "label": "exercise equipment",
       "source_category": "exercise_equipment",
-      "count": 8,
+      "count": 6,
       "orientation_count": null,
       "render_count": null
     },
@@ -6848,7 +6892,7 @@
       "dataset": "hssd",
       "label": "cooker",
       "source_category": "cooker",
-      "count": 21,
+      "count": 18,
       "orientation_count": null,
       "render_count": null
     },
@@ -6875,7 +6919,7 @@
       "dataset": "hssd",
       "label": "rolling cart",
       "source_category": "rolling_cart",
-      "count": 14,
+      "count": 12,
       "orientation_count": null,
       "render_count": null
     },
@@ -6893,7 +6937,7 @@
       "dataset": "hssd",
       "label": "toaster",
       "source_category": "toaster",
-      "count": 17,
+      "count": 13,
       "orientation_count": null,
       "render_count": null
     },
@@ -6902,7 +6946,7 @@
       "dataset": "hssd",
       "label": "toilet paper",
       "source_category": "toilet_paper",
-      "count": 21,
+      "count": 18,
       "orientation_count": null,
       "render_count": null
     },
@@ -6911,7 +6955,7 @@
       "dataset": "hssd",
       "label": "ceiling fan",
       "source_category": "ceiling_fan",
-      "count": 17,
+      "count": 11,
       "orientation_count": null,
       "render_count": null
     },
@@ -6920,7 +6964,7 @@
       "dataset": "hssd",
       "label": "appliance",
       "source_category": "appliance",
-      "count": 31,
+      "count": 23,
       "orientation_count": null,
       "render_count": null
     },
@@ -6929,7 +6973,7 @@
       "dataset": "hssd",
       "label": "scale",
       "source_category": "scale",
-      "count": 14,
+      "count": 13,
       "orientation_count": null,
       "render_count": null
     },
@@ -6938,7 +6982,7 @@
       "dataset": "hssd",
       "label": "dresser",
       "source_category": "dresser",
-      "count": 369,
+      "count": 311,
       "orientation_count": null,
       "render_count": null
     },
@@ -6956,7 +7000,7 @@
       "dataset": "hssd",
       "label": "microwave",
       "source_category": "microwave",
-      "count": 15,
+      "count": 9,
       "orientation_count": null,
       "render_count": null
     },
@@ -6965,7 +7009,7 @@
       "dataset": "hssd",
       "label": "phone",
       "source_category": "phone",
-      "count": 16,
+      "count": 15,
       "orientation_count": null,
       "render_count": null
     },
@@ -6974,7 +7018,7 @@
       "dataset": "hssd",
       "label": "floor",
       "source_category": "floor",
-      "count": 7,
+      "count": 6,
       "orientation_count": null,
       "render_count": null
     },
@@ -6983,7 +7027,7 @@
       "dataset": "hssd",
       "label": "radiator",
       "source_category": "radiator",
-      "count": 12,
+      "count": 11,
       "orientation_count": null,
       "render_count": null
     },
@@ -6992,7 +7036,7 @@
       "dataset": "hssd",
       "label": "knife holder",
       "source_category": "knife_holder",
-      "count": 6,
+      "count": 5,
       "orientation_count": null,
       "render_count": null
     },
@@ -7001,7 +7045,7 @@
       "dataset": "hssd",
       "label": "soap dispenser",
       "source_category": "soap_dispenser",
-      "count": 17,
+      "count": 14,
       "orientation_count": null,
       "render_count": null
     },
@@ -7010,7 +7054,7 @@
       "dataset": "hssd",
       "label": "towel rack",
       "source_category": "towel_rack",
-      "count": 28,
+      "count": 26,
       "orientation_count": null,
       "render_count": null
     },
@@ -7019,7 +7063,7 @@
       "dataset": "hssd",
       "label": "ventilation hood",
       "source_category": "ventilation_hood",
-      "count": 23,
+      "count": 20,
       "orientation_count": null,
       "render_count": null
     },
@@ -7028,7 +7072,7 @@
       "dataset": "hssd",
       "label": "tv",
       "source_category": "tv",
-      "count": 51,
+      "count": 47,
       "orientation_count": null,
       "render_count": null
     },
@@ -7037,7 +7081,7 @@
       "dataset": "hssd",
       "label": "plant",
       "source_category": "plant",
-      "count": 378,
+      "count": 305,
       "orientation_count": null,
       "render_count": null
     },
@@ -7046,7 +7090,7 @@
       "dataset": "hssd",
       "label": "tv stand",
       "source_category": "tv_stand",
-      "count": 7,
+      "count": 6,
       "orientation_count": null,
       "render_count": null
     },
@@ -7055,7 +7099,7 @@
       "dataset": "hssd",
       "label": "hammock",
       "source_category": "hammock",
-      "count": 9,
+      "count": 7,
       "orientation_count": null,
       "render_count": null
     },
@@ -7064,7 +7108,7 @@
       "dataset": "hssd",
       "label": "pillar",
       "source_category": "pillar",
-      "count": 12,
+      "count": 11,
       "orientation_count": null,
       "render_count": null
     },
@@ -7073,7 +7117,7 @@
       "dataset": "hssd",
       "label": "kettle",
       "source_category": "kettle",
-      "count": 18,
+      "count": 17,
       "orientation_count": null,
       "render_count": null
     },
@@ -7082,7 +7126,7 @@
       "dataset": "hssd",
       "label": "fencing",
       "source_category": "fencing",
-      "count": 7,
+      "count": 6,
       "orientation_count": null,
       "render_count": null
     },
@@ -7100,7 +7144,7 @@
       "dataset": "hssd",
       "label": "kitchen utensil",
       "source_category": "kitchen_utensil",
-      "count": 34,
+      "count": 31,
       "orientation_count": null,
       "render_count": null
     },
@@ -7118,7 +7162,7 @@
       "dataset": "hssd",
       "label": "blanket",
       "source_category": "blanket",
-      "count": 32,
+      "count": 28,
       "orientation_count": null,
       "render_count": null
     },
@@ -7136,7 +7180,7 @@
       "dataset": "hssd",
       "label": "kitchen counter",
       "source_category": "kitchen_counter",
-      "count": 9,
+      "count": 8,
       "orientation_count": null,
       "render_count": null
     },
@@ -7145,7 +7189,7 @@
       "dataset": "hssd",
       "label": "stairs",
       "source_category": "stairs",
-      "count": 23,
+      "count": 21,
       "orientation_count": null,
       "render_count": null
     },
@@ -7154,7 +7198,7 @@
       "dataset": "hssd",
       "label": "bag",
       "source_category": "bag",
-      "count": 46,
+      "count": 36,
       "orientation_count": null,
       "render_count": null
     },
@@ -7199,7 +7243,7 @@
       "dataset": "hssd",
       "label": "coffee machine",
       "source_category": "coffee_machine",
-      "count": 13,
+      "count": 11,
       "orientation_count": null,
       "render_count": null
     },
@@ -7217,7 +7261,7 @@
       "dataset": "hssd",
       "label": "kitchen lower cabinet",
       "source_category": "kitchen_lower_cabinet",
-      "count": 24,
+      "count": 21,
       "orientation_count": null,
       "render_count": null
     },
@@ -7226,7 +7270,7 @@
       "dataset": "hssd",
       "label": "radio",
       "source_category": "radio",
-      "count": 20,
+      "count": 16,
       "orientation_count": null,
       "render_count": null
     },
@@ -7235,7 +7279,7 @@
       "dataset": "hssd",
       "label": "nightstand",
       "source_category": "nightstand",
-      "count": 66,
+      "count": 55,
       "orientation_count": null,
       "render_count": null
     },
@@ -7262,7 +7306,7 @@
       "dataset": "hssd",
       "label": "wine cabinet",
       "source_category": "wine_cabinet",
-      "count": 2,
+      "count": 1,
       "orientation_count": null,
       "render_count": null
     },
@@ -7271,7 +7315,7 @@
       "dataset": "hssd",
       "label": "fruit bowl",
       "source_category": "fruit_bowl",
-      "count": 15,
+      "count": 14,
       "orientation_count": null,
       "render_count": null
     },
@@ -7280,7 +7324,7 @@
       "dataset": "hssd",
       "label": "container",
       "source_category": "container",
-      "count": 92,
+      "count": 74,
       "orientation_count": null,
       "render_count": null
     },
@@ -7307,7 +7351,7 @@
       "dataset": "hssd",
       "label": "kitchen island",
       "source_category": "kitchen_island",
-      "count": 13,
+      "count": 12,
       "orientation_count": null,
       "render_count": null
     },
@@ -7334,16 +7378,7 @@
       "dataset": "hssd",
       "label": "cart",
       "source_category": "cart",
-      "count": 22,
-      "orientation_count": null,
-      "render_count": null
-    },
-    {
-      "id": "hssd-8d8c98762c",
-      "dataset": "hssd",
-      "label": "storage space",
-      "source_category": "storage_space",
-      "count": 1,
+      "count": 19,
       "orientation_count": null,
       "render_count": null
     },
@@ -7352,7 +7387,7 @@
       "dataset": "hssd",
       "label": "storage box",
       "source_category": "storage_box",
-      "count": 16,
+      "count": 13,
       "orientation_count": null,
       "render_count": null
     },
@@ -7361,7 +7396,7 @@
       "dataset": "hssd",
       "label": "drawer desk",
       "source_category": "drawer_desk",
-      "count": 36,
+      "count": 31,
       "orientation_count": null,
       "render_count": null
     },
@@ -7379,7 +7414,7 @@
       "dataset": "hssd",
       "label": "file cabinet",
       "source_category": "file_cabinet",
-      "count": 15,
+      "count": 11,
       "orientation_count": null,
       "render_count": null
     },
@@ -7406,7 +7441,7 @@
       "dataset": "hssd",
       "label": "printer",
       "source_category": "printer",
-      "count": 12,
+      "count": 10,
       "orientation_count": null,
       "render_count": null
     },
@@ -7415,7 +7450,7 @@
       "dataset": "hssd",
       "label": "stovetop",
       "source_category": "stovetop",
-      "count": 8,
+      "count": 6,
       "orientation_count": null,
       "render_count": null
     },
@@ -7433,7 +7468,7 @@
       "dataset": "hssd",
       "label": "jug",
       "source_category": "jug",
-      "count": 9,
+      "count": 8,
       "orientation_count": null,
       "render_count": null
     },
@@ -7460,7 +7495,7 @@
       "dataset": "hssd",
       "label": "shower soap shelf",
       "source_category": "shower_soap_shelf",
-      "count": 4,
+      "count": 3,
       "orientation_count": null,
       "render_count": null
     },
@@ -7478,7 +7513,7 @@
       "dataset": "hssd",
       "label": "air conditioner",
       "source_category": "air_conditioner",
-      "count": 6,
+      "count": 5,
       "orientation_count": null,
       "render_count": null
     },
@@ -7505,7 +7540,7 @@
       "dataset": "hssd",
       "label": "hanger",
       "source_category": "hanger",
-      "count": 66,
+      "count": 58,
       "orientation_count": null,
       "render_count": null
     },
@@ -7514,7 +7549,7 @@
       "dataset": "hssd",
       "label": "chaise",
       "source_category": "chaise",
-      "count": 10,
+      "count": 9,
       "orientation_count": null,
       "render_count": null
     },
@@ -7577,7 +7612,7 @@
       "dataset": "hssd",
       "label": "locker",
       "source_category": "locker",
-      "count": 6,
+      "count": 5,
       "orientation_count": null,
       "render_count": null
     },
@@ -7600,29 +7635,11 @@
       "render_count": null
     },
     {
-      "id": "hssd-b3ef6cac6a",
-      "dataset": "hssd",
-      "label": "soap dispenser shelf in shower",
-      "source_category": "soap_dispenser_shelf_in_shower",
-      "count": 2,
-      "orientation_count": null,
-      "render_count": null
-    },
-    {
-      "id": "hssd-514bffb574",
-      "dataset": "hssd",
-      "label": "curtain rail",
-      "source_category": "curtain_rail",
-      "count": 1,
-      "orientation_count": null,
-      "render_count": null
-    },
-    {
       "id": "hssd-4b7c7cca44",
       "dataset": "hssd",
       "label": "fireplace wall",
       "source_category": "fireplace_wall",
-      "count": 4,
+      "count": 3,
       "orientation_count": null,
       "render_count": null
     },
@@ -7631,7 +7648,7 @@
       "dataset": "hssd",
       "label": "food",
       "source_category": "food",
-      "count": 6,
+      "count": 5,
       "orientation_count": null,
       "render_count": null
     },
@@ -7649,7 +7666,7 @@
       "dataset": "hssd",
       "label": "unknown /outside",
       "source_category": "unknown_/outside",
-      "count": 4,
+      "count": 1,
       "orientation_count": null,
       "render_count": null
     },
@@ -7676,7 +7693,7 @@
       "dataset": "hssd",
       "label": "teapot",
       "source_category": "teapot",
-      "count": 15,
+      "count": 12,
       "orientation_count": null,
       "render_count": null
     },
@@ -7712,7 +7729,7 @@
       "dataset": "hssd",
       "label": "casket",
       "source_category": "casket",
-      "count": 19,
+      "count": 14,
       "orientation_count": null,
       "render_count": null
     },
@@ -7739,7 +7756,7 @@
       "dataset": "hssd",
       "label": "object /outside",
       "source_category": "object_/outside",
-      "count": 22,
+      "count": 19,
       "orientation_count": null,
       "render_count": null
     },
@@ -7748,7 +7765,7 @@
       "dataset": "hssd",
       "label": "unknown wall",
       "source_category": "unknown_wall",
-      "count": 13,
+      "count": 10,
       "orientation_count": null,
       "render_count": null
     },
@@ -7757,7 +7774,7 @@
       "dataset": "hssd",
       "label": "machine",
       "source_category": "machine",
-      "count": 15,
+      "count": 13,
       "orientation_count": null,
       "render_count": null
     },
@@ -7775,7 +7792,7 @@
       "dataset": "hssd",
       "label": "art frame",
       "source_category": "art_frame",
-      "count": 8,
+      "count": 7,
       "orientation_count": null,
       "render_count": null
     },
@@ -7802,7 +7819,7 @@
       "dataset": "hssd",
       "label": "bucket",
       "source_category": "bucket",
-      "count": 4,
+      "count": 3,
       "orientation_count": null,
       "render_count": null
     },
@@ -7820,7 +7837,7 @@
       "dataset": "hssd",
       "label": "utensil",
       "source_category": "utensil",
-      "count": 5,
+      "count": 3,
       "orientation_count": null,
       "render_count": null
     },
@@ -7829,7 +7846,7 @@
       "dataset": "hssd",
       "label": "pitcher",
       "source_category": "pitcher",
-      "count": 11,
+      "count": 9,
       "orientation_count": null,
       "render_count": null
     },
@@ -7838,7 +7855,7 @@
       "dataset": "hssd",
       "label": "heater",
       "source_category": "heater",
-      "count": 15,
+      "count": 11,
       "orientation_count": null,
       "render_count": null
     },
@@ -7865,7 +7882,7 @@
       "dataset": "hssd",
       "label": "mixer",
       "source_category": "mixer",
-      "count": 3,
+      "count": 2,
       "orientation_count": null,
       "render_count": null
     },
@@ -7874,7 +7891,7 @@
       "dataset": "hssd",
       "label": "tile",
       "source_category": "tile",
-      "count": 5,
+      "count": 3,
       "orientation_count": null,
       "render_count": null
     },
@@ -7901,7 +7918,7 @@
       "dataset": "hssd",
       "label": "stove",
       "source_category": "stove",
-      "count": 12,
+      "count": 9,
       "orientation_count": null,
       "render_count": null
     },
@@ -7910,7 +7927,7 @@
       "dataset": "hssd",
       "label": "dressing table",
       "source_category": "dressing_table",
-      "count": 6,
+      "count": 4,
       "orientation_count": null,
       "render_count": null
     },
@@ -7919,7 +7936,7 @@
       "dataset": "hssd",
       "label": "camera",
       "source_category": "camera",
-      "count": 10,
+      "count": 9,
       "orientation_count": null,
       "render_count": null
     },
@@ -7964,7 +7981,7 @@
       "dataset": "hssd",
       "label": "dumbbell",
       "source_category": "dumbbell",
-      "count": 6,
+      "count": 4,
       "orientation_count": null,
       "render_count": null
     },
@@ -7973,7 +7990,7 @@
       "dataset": "hssd",
       "label": "flower stand",
       "source_category": "flower_stand",
-      "count": 4,
+      "count": 2,
       "orientation_count": null,
       "render_count": null
     },
@@ -7991,7 +8008,7 @@
       "dataset": "hssd",
       "label": "blinds",
       "source_category": "blinds",
-      "count": 14,
+      "count": 13,
       "orientation_count": null,
       "render_count": null
     },
@@ -8018,7 +8035,7 @@
       "dataset": "hssd",
       "label": "vent",
       "source_category": "vent",
-      "count": 3,
+      "count": 1,
       "orientation_count": null,
       "render_count": null
     },
@@ -8081,7 +8098,7 @@
       "dataset": "hssd",
       "label": "window",
       "source_category": "window",
-      "count": 9,
+      "count": 7,
       "orientation_count": null,
       "render_count": null
     },
@@ -8099,7 +8116,7 @@
       "dataset": "hssd",
       "label": "spice rack",
       "source_category": "spice_rack",
-      "count": 2,
+      "count": 1,
       "orientation_count": null,
       "render_count": null
     },
@@ -8117,7 +8134,7 @@
       "dataset": "hssd",
       "label": "washbasin",
       "source_category": "washbasin",
-      "count": 14,
+      "count": 12,
       "orientation_count": null,
       "render_count": null
     },
@@ -8126,7 +8143,7 @@
       "dataset": "hssd",
       "label": "workstation",
       "source_category": "workstation",
-      "count": 6,
+      "count": 4,
       "orientation_count": null,
       "render_count": null
     },
@@ -8144,7 +8161,7 @@
       "dataset": "hssd",
       "label": "lamp stand",
       "source_category": "lamp_stand",
-      "count": 6,
+      "count": 5,
       "orientation_count": null,
       "render_count": null
     },
@@ -8153,7 +8170,7 @@
       "dataset": "hssd",
       "label": "oven",
       "source_category": "oven",
-      "count": 19,
+      "count": 17,
       "orientation_count": null,
       "render_count": null
     },
@@ -8207,15 +8224,6 @@
       "dataset": "hssd",
       "label": "vanity",
       "source_category": "vanity",
-      "count": 4,
-      "orientation_count": null,
-      "render_count": null
-    },
-    {
-      "id": "hssd-8da12ec4ea",
-      "dataset": "hssd",
-      "label": "wash cabinet",
-      "source_category": "wash_cabinet",
       "count": 3,
       "orientation_count": null,
       "render_count": null
@@ -8234,7 +8242,7 @@
       "dataset": "hssd",
       "label": "shelf/cabinet",
       "source_category": "shelf/cabinet",
-      "count": 3,
+      "count": 2,
       "orientation_count": null,
       "render_count": null
     },
@@ -8270,7 +8278,7 @@
       "dataset": "hssd",
       "label": "weight",
       "source_category": "weight",
-      "count": 11,
+      "count": 10,
       "orientation_count": null,
       "render_count": null
     },
@@ -8279,7 +8287,7 @@
       "dataset": "hssd",
       "label": "oil lamp",
       "source_category": "oil_lamp",
-      "count": 4,
+      "count": 3,
       "orientation_count": null,
       "render_count": null
     },
@@ -8306,7 +8314,7 @@
       "dataset": "hssd",
       "label": "dishwasher",
       "source_category": "dishwasher",
-      "count": 8,
+      "count": 6,
       "orientation_count": null,
       "render_count": null
     },
@@ -8333,7 +8341,7 @@
       "dataset": "hssd",
       "label": "wall",
       "source_category": "wall",
-      "count": 11,
+      "count": 10,
       "orientation_count": null,
       "render_count": null
     },
@@ -8378,7 +8386,7 @@
       "dataset": "hssd",
       "label": "range hood",
       "source_category": "range_hood",
-      "count": 7,
+      "count": 6,
       "orientation_count": null,
       "render_count": null
     },
@@ -8414,7 +8422,7 @@
       "dataset": "hssd",
       "label": "can",
       "source_category": "can",
-      "count": 5,
+      "count": 4,
       "orientation_count": null,
       "render_count": null
     },
@@ -8423,7 +8431,7 @@
       "dataset": "hssd",
       "label": "flower",
       "source_category": "flower",
-      "count": 15,
+      "count": 5,
       "orientation_count": null,
       "render_count": null
     },
@@ -8432,7 +8440,7 @@
       "dataset": "hssd",
       "label": "drinkware",
       "source_category": "drinkware",
-      "count": 14,
+      "count": 13,
       "orientation_count": null,
       "render_count": null
     },
@@ -8450,7 +8458,7 @@
       "dataset": "hssd",
       "label": "curtain rod",
       "source_category": "curtain_rod",
-      "count": 5,
+      "count": 4,
       "orientation_count": null,
       "render_count": null
     },
@@ -8509,15 +8517,6 @@
       "render_count": null
     },
     {
-      "id": "hssd-ba1bc395fa",
-      "dataset": "hssd",
-      "label": "air duct",
-      "source_category": "air_duct",
-      "count": 1,
-      "orientation_count": null,
-      "render_count": null
-    },
-    {
       "id": "hssd-22942b7c5c",
       "dataset": "hssd",
       "label": "guitar",
@@ -8540,7 +8539,7 @@
       "dataset": "hssd",
       "label": "soapbox",
       "source_category": "soapbox",
-      "count": 3,
+      "count": 2,
       "orientation_count": null,
       "render_count": null
     },
@@ -8585,7 +8584,7 @@
       "dataset": "hssd",
       "label": "barbecue",
       "source_category": "barbecue",
-      "count": 6,
+      "count": 5,
       "orientation_count": null,
       "render_count": null
     },
@@ -8657,7 +8656,7 @@
       "dataset": "hssd",
       "label": "wall panel",
       "source_category": "wall_panel",
-      "count": 5,
+      "count": 4,
       "orientation_count": null,
       "render_count": null
     },
@@ -8711,7 +8710,7 @@
       "dataset": "hssd",
       "label": "barrel",
       "source_category": "barrel",
-      "count": 3,
+      "count": 2,
       "orientation_count": null,
       "render_count": null
     },
@@ -8756,7 +8755,7 @@
       "dataset": "hssd",
       "label": "semi chair",
       "source_category": "semi_chair",
-      "count": 2,
+      "count": 1,
       "orientation_count": null,
       "render_count": null
     },
@@ -8774,7 +8773,7 @@
       "dataset": "hssd",
       "label": "painting frame",
       "source_category": "painting_frame",
-      "count": 3,
+      "count": 1,
       "orientation_count": null,
       "render_count": null
     },
@@ -8797,20 +8796,11 @@
       "render_count": null
     },
     {
-      "id": "hssd-e30bfd0c38",
-      "dataset": "hssd",
-      "label": "stone",
-      "source_category": "stone",
-      "count": 1,
-      "orientation_count": null,
-      "render_count": null
-    },
-    {
       "id": "hssd-0e11f0a4d5",
       "dataset": "hssd",
       "label": "shower hose",
       "source_category": "shower_hose",
-      "count": 3,
+      "count": 2,
       "orientation_count": null,
       "render_count": null
     },
@@ -8882,7 +8872,7 @@
       "dataset": "hssd",
       "label": "decorative plate",
       "source_category": "decorative_plate",
-      "count": 2,
+      "count": 1,
       "orientation_count": null,
       "render_count": null
     },
@@ -8891,7 +8881,7 @@
       "dataset": "hssd",
       "label": "roof",
       "source_category": "roof",
-      "count": 5,
+      "count": 4,
       "orientation_count": null,
       "render_count": null
     },
@@ -8936,7 +8926,7 @@
       "dataset": "hssd",
       "label": "jewelry box",
       "source_category": "jewelry_box",
-      "count": 3,
+      "count": 2,
       "orientation_count": null,
       "render_count": null
     },
@@ -8990,7 +8980,7 @@
       "dataset": "hssd",
       "label": "fire pit",
       "source_category": "fire_pit",
-      "count": 3,
+      "count": 2,
       "orientation_count": null,
       "render_count": null
     },
@@ -9017,7 +9007,7 @@
       "dataset": "hssd",
       "label": "media console",
       "source_category": "media_console",
-      "count": 8,
+      "count": 5,
       "orientation_count": null,
       "render_count": null
     },
@@ -9035,7 +9025,7 @@
       "dataset": "hssd",
       "label": "basin",
       "source_category": "basin",
-      "count": 4,
+      "count": 2,
       "orientation_count": null,
       "render_count": null
     },
@@ -9125,7 +9115,7 @@
       "dataset": "hssd",
       "label": "watering can",
       "source_category": "watering_can",
-      "count": 4,
+      "count": 2,
       "orientation_count": null,
       "render_count": null
     },
@@ -9134,15 +9124,6 @@
       "dataset": "hssd",
       "label": "shirt",
       "source_category": "shirt",
-      "count": 1,
-      "orientation_count": null,
-      "render_count": null
-    },
-    {
-      "id": "hssd-56856877c5",
-      "dataset": "hssd",
-      "label": "skirting board",
-      "source_category": "skirting_board",
       "count": 1,
       "orientation_count": null,
       "render_count": null
@@ -9242,7 +9223,7 @@
       "dataset": "hssd",
       "label": "toilet brush holder",
       "source_category": "toilet_brush_holder",
-      "count": 3,
+      "count": 2,
       "orientation_count": null,
       "render_count": null
     },
@@ -9314,7 +9295,7 @@
       "dataset": "hssd",
       "label": "toilet stall",
       "source_category": "toilet_stall",
-      "count": 2,
+      "count": 1,
       "orientation_count": null,
       "render_count": null
     },
@@ -9341,7 +9322,7 @@
       "dataset": "hssd",
       "label": "rock",
       "source_category": "rock",
-      "count": 2,
+      "count": 1,
       "orientation_count": null,
       "render_count": null
     },
@@ -9350,7 +9331,7 @@
       "dataset": "hssd",
       "label": "ironing board",
       "source_category": "ironing_board",
-      "count": 2,
+      "count": 1,
       "orientation_count": null,
       "render_count": null
     },
@@ -9359,16 +9340,7 @@
       "dataset": "hssd",
       "label": "light",
       "source_category": "light",
-      "count": 3,
-      "orientation_count": null,
-      "render_count": null
-    },
-    {
-      "id": "hssd-97e7ed5741",
-      "dataset": "hssd",
-      "label": "fire extinguisher",
-      "source_category": "fire_extinguisher",
-      "count": 1,
+      "count": 2,
       "orientation_count": null,
       "render_count": null
     },
@@ -9431,7 +9403,7 @@
       "dataset": "hssd",
       "label": "sculpture",
       "source_category": "sculpture",
-      "count": 4,
+      "count": 3,
       "orientation_count": null,
       "render_count": null
     },
@@ -9458,7 +9430,7 @@
       "dataset": "hssd",
       "label": "pipe",
       "source_category": "pipe",
-      "count": 2,
+      "count": 1,
       "orientation_count": null,
       "render_count": null
     },
@@ -9523,7 +9495,7 @@
       "source_category": "02691156:airplane",
       "count": 4045,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 4045
     },
     {
       "id": "shapenet-4ecb557ea8",
@@ -9532,7 +9504,7 @@
       "source_category": "02747177:ashcan",
       "count": 343,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 343
     },
     {
       "id": "shapenet-cf16566530",
@@ -9541,7 +9513,7 @@
       "source_category": "02773838:bag",
       "count": 83,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 83
     },
     {
       "id": "shapenet-9b687a4f39",
@@ -9550,7 +9522,7 @@
       "source_category": "02801938:basket",
       "count": 113,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 113
     },
     {
       "id": "shapenet-cd370026dd",
@@ -9559,7 +9531,7 @@
       "source_category": "02808440:bathtub",
       "count": 856,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 856
     },
     {
       "id": "shapenet-c79eef3bf2",
@@ -9568,7 +9540,7 @@
       "source_category": "02818832:bed",
       "count": 233,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 233
     },
     {
       "id": "shapenet-7798f6027c",
@@ -9577,7 +9549,7 @@
       "source_category": "02828884:bench",
       "count": 1813,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 1813
     },
     {
       "id": "shapenet-94ef59323d",
@@ -9586,7 +9558,7 @@
       "source_category": "02843684:birdhouse",
       "count": 73,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 73
     },
     {
       "id": "shapenet-88072f2233",
@@ -9595,7 +9567,7 @@
       "source_category": "02871439:bookshelf",
       "count": 452,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 452
     },
     {
       "id": "shapenet-9caecab28f",
@@ -9604,7 +9576,7 @@
       "source_category": "02876657:bottle",
       "count": 498,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 498
     },
     {
       "id": "shapenet-d4773804cb",
@@ -9613,7 +9585,7 @@
       "source_category": "02880940:bowl",
       "count": 186,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 186
     },
     {
       "id": "shapenet-33758d8009",
@@ -9622,7 +9594,7 @@
       "source_category": "02924116:bus",
       "count": 939,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 939
     },
     {
       "id": "shapenet-ead1e24687",
@@ -9631,7 +9603,7 @@
       "source_category": "02933112:cabinet",
       "count": 1571,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 1571
     },
     {
       "id": "shapenet-1a1da54258",
@@ -9640,7 +9612,7 @@
       "source_category": "02942699:camera",
       "count": 113,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 113
     },
     {
       "id": "shapenet-4a3f882488",
@@ -9649,7 +9621,7 @@
       "source_category": "02946921:can",
       "count": 108,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 108
     },
     {
       "id": "shapenet-ae9cb6f8ee",
@@ -9658,7 +9630,7 @@
       "source_category": "02954340:cap",
       "count": 56,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 56
     },
     {
       "id": "shapenet-7148a74221",
@@ -9667,7 +9639,7 @@
       "source_category": "02958343:car",
       "count": 3514,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 3510
     },
     {
       "id": "shapenet-c063687732",
@@ -9676,7 +9648,7 @@
       "source_category": "02992529:cellular telephone",
       "count": 831,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 831
     },
     {
       "id": "shapenet-fc87590fc5",
@@ -9685,7 +9657,7 @@
       "source_category": "03001627:chair",
       "count": 6778,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 6775
     },
     {
       "id": "shapenet-15aa32e50b",
@@ -9694,7 +9666,7 @@
       "source_category": "03046257:clock",
       "count": 651,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 651
     },
     {
       "id": "shapenet-6444b30d70",
@@ -9703,7 +9675,7 @@
       "source_category": "03085013:computer keyboard",
       "count": 65,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 65
     },
     {
       "id": "shapenet-dc97a40ec1",
@@ -9712,7 +9684,7 @@
       "source_category": "03207941:dishwasher",
       "count": 93,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 93
     },
     {
       "id": "shapenet-1c2b45f2eb",
@@ -9721,7 +9693,7 @@
       "source_category": "03211117:display",
       "count": 1093,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 1093
     },
     {
       "id": "shapenet-cf5df2a2a0",
@@ -9730,7 +9702,7 @@
       "source_category": "03261776:earphone",
       "count": 73,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 73
     },
     {
       "id": "shapenet-1201566805",
@@ -9739,7 +9711,7 @@
       "source_category": "03325088:faucet",
       "count": 744,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 744
     },
     {
       "id": "shapenet-d273dc9b45",
@@ -9748,7 +9720,7 @@
       "source_category": "03337140:file",
       "count": 298,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 298
     },
     {
       "id": "shapenet-de86686cd8",
@@ -9757,7 +9729,7 @@
       "source_category": "03467517:guitar",
       "count": 797,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 797
     },
     {
       "id": "shapenet-1e0908e685",
@@ -9766,7 +9738,7 @@
       "source_category": "03513137:helmet",
       "count": 162,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 162
     },
     {
       "id": "shapenet-0c71f1034d",
@@ -9775,7 +9747,7 @@
       "source_category": "03593526:jar",
       "count": 596,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 596
     },
     {
       "id": "shapenet-effb766fa6",
@@ -9784,7 +9756,7 @@
       "source_category": "03624134:knife",
       "count": 424,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 424
     },
     {
       "id": "shapenet-c64ec840c6",
@@ -9793,7 +9765,7 @@
       "source_category": "03636649:lamp",
       "count": 2318,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 2318
     },
     {
       "id": "shapenet-01ec5880e4",
@@ -9802,7 +9774,7 @@
       "source_category": "03642806:laptop",
       "count": 460,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 460
     },
     {
       "id": "shapenet-e7c21e926b",
@@ -9811,7 +9783,7 @@
       "source_category": "03691459:loudspeaker",
       "count": 1597,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 1597
     },
     {
       "id": "shapenet-a2cb505daa",
@@ -9820,7 +9792,7 @@
       "source_category": "03710193:mailbox",
       "count": 94,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 94
     },
     {
       "id": "shapenet-5d9b49ad3f",
@@ -9829,7 +9801,7 @@
       "source_category": "03759954:microphone",
       "count": 67,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 67
     },
     {
       "id": "shapenet-b8ce7a0f5f",
@@ -9838,7 +9810,7 @@
       "source_category": "03761084:microwave",
       "count": 152,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 152
     },
     {
       "id": "shapenet-a6700b1179",
@@ -9847,7 +9819,7 @@
       "source_category": "03790512:motorcycle",
       "count": 337,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 337
     },
     {
       "id": "shapenet-daa94402ea",
@@ -9856,7 +9828,7 @@
       "source_category": "03797390:mug",
       "count": 214,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 214
     },
     {
       "id": "shapenet-329a37c0a5",
@@ -9865,7 +9837,7 @@
       "source_category": "03928116:piano",
       "count": 239,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 239
     },
     {
       "id": "shapenet-6b04c79c7d",
@@ -9874,7 +9846,7 @@
       "source_category": "03938244:pillow",
       "count": 96,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 96
     },
     {
       "id": "shapenet-86de5929da",
@@ -9883,7 +9855,7 @@
       "source_category": "03948459:pistol",
       "count": 307,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 307
     },
     {
       "id": "shapenet-2d69af0d38",
@@ -9892,7 +9864,7 @@
       "source_category": "03991062:pot",
       "count": 602,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 601
     },
     {
       "id": "shapenet-5b89623d88",
@@ -9901,7 +9873,7 @@
       "source_category": "04004475:printer",
       "count": 166,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 166
     },
     {
       "id": "shapenet-f03cad4539",
@@ -9910,7 +9882,7 @@
       "source_category": "04074963:remote control",
       "count": 66,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 66
     },
     {
       "id": "shapenet-0c1363c74c",
@@ -9919,7 +9891,7 @@
       "source_category": "04090263:rifle",
       "count": 2373,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 2373
     },
     {
       "id": "shapenet-26c452aebb",
@@ -9928,7 +9900,7 @@
       "source_category": "04099429:rocket",
       "count": 85,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 85
     },
     {
       "id": "shapenet-01c1fc2013",
@@ -9937,7 +9909,7 @@
       "source_category": "04225987:skateboard",
       "count": 152,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 152
     },
     {
       "id": "shapenet-565cc51e85",
@@ -9946,7 +9918,7 @@
       "source_category": "04256520:sofa",
       "count": 3173,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 3173
     },
     {
       "id": "shapenet-0366d5d516",
@@ -9955,7 +9927,7 @@
       "source_category": "04330267:stove",
       "count": 218,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 218
     },
     {
       "id": "shapenet-bd3a3bb72f",
@@ -9964,7 +9936,7 @@
       "source_category": "04379243:table",
       "count": 8436,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 8436
     },
     {
       "id": "shapenet-2fe56bd799",
@@ -9973,7 +9945,7 @@
       "source_category": "04401088:telephone",
       "count": 1089,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 1089
     },
     {
       "id": "shapenet-3594f721c7",
@@ -9982,7 +9954,7 @@
       "source_category": "04460130:tower",
       "count": 133,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 133
     },
     {
       "id": "shapenet-75c61b1244",
@@ -9991,7 +9963,7 @@
       "source_category": "04468005:train",
       "count": 389,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 389
     },
     {
       "id": "shapenet-79b133661a",
@@ -10000,7 +9972,7 @@
       "source_category": "04530566:vessel",
       "count": 1939,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 1938
     },
     {
       "id": "shapenet-c93d7de30f",
@@ -10009,15 +9981,17 @@
       "source_category": "04554684:washer",
       "count": 169,
       "orientation_count": null,
-      "render_count": null
+      "render_count": 169
     }
   ],
   "coverage_notes": [
-    "Catalogue size is independent of the locally retrieved meshes.",
-    "Orientation counts come from Objaverse alignment validation and Omni6DPose mesh/alignment reports. Other datasets have no consolidated orientation report in this export.",
-    "Render counts use exact source-category matches in validated Objaverse and Omni6DPose reports. Unmatched or incompatible counts are null, not zero.",
-    "ShapeNet merged render totals include overlapping category batches and are excluded from per-category counts.",
-    "Stage illumination encodes category-level reported counts; point positions are schematic and do not identify individual source IDs.",
-    "Drive aligned_all and renders_all contain batch archives; the Objaverse progress workbook independently agrees on 434 categories and 44,473 catalogue entries. The workbook processed column is a separate partial progress measure (4,216), not the alignment count."
+    "Dataset/category sizes use the complete filtered inventory workbook, with Objaverse updated from its cross-validated 434-category CSV and progress tables.",
+    "Alignment records describe checked rotations (Objaverse), mesh/alignment reports (Omni6DPose), or nonempty canonical mesh exports matching the complete category inventory (3D-FUTURE). Unavailable consolidated counts remain null.",
+    "Rendered instance counts refer to instance packages, each checked for 150 RGB, mask and NOCS views; not a count of images.",
+    "3D-FUTURE: 14,809 validated instances across 49 categories.",
+    "ShapeNet: maximum validated per-category count from batches 1/2 and 3/4; invalid entries are subtracted before taking the maximum. Overlapping car batches are not added. This is a per-category validated lower bound, not a deduplicated union of batch IDs.",
+    "Objaverse and Omni6DPose render reports retain their existing exact category mappings.",
+    "Point positions are schematic; category overview sheets and individual render examples are representative outputs, not a claim that every catalogue entry is pictured.",
+    "The broader raw-metadata union (134,644 entries / 1,100 groups) is superseded here by the project filtered inventory (131,352 / 1,091). Omni6DPose excludes 592 real-metadata records without meshes; HSSD uses its 400-category filtered object inventory."
   ]
 }

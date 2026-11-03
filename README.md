@@ -33,7 +33,7 @@ Push changes to a branch and open a pull request to run validation. Merge review
 - Nine selected instances: two teapots, two cabinets, three bottles and two mugs; 72 paired final views.
 - Each instance has 16 RGB-D input views and 4,096 DINOv2 surface descriptors. Matching uses 2,048 keypoints, four yaw candidates, and recorded correspondence-based residual-yaw scores.
 - Explicit reference directions initialize canonical orientation. One cabinet includes a separately recorded orientation refinement after matching; candidate selection and reviewed exports remain distinct in the presentation.
-- The object atlas covers 134,644 source-category catalogue entries across 1,100 groups from complete metadata inventories and the Objaverse alignment table. The catalogue is independent of locally retrieved meshes. Reported orientations and validated renders have separate coverage indicators; absent reports remain unknown. See `site/catalogue-statistics.json` for exact sources and scopes.
+- The object atlas covers 131,352 source-category entries across 1,091 groups from the complete filtered inventory workbook and the Objaverse alignment table. The catalogue is independent of locally retrieved meshes. Reported orientations and validated renders have separate coverage indicators; absent reports remain unknown. See `site/catalogue-statistics.json` for exact sources and scopes.
 - HSSD scene coordinates demonstrate composition between canonical frames and scene-instance transforms.
 
 Canonical visualization is right-handed, +Z up and +Y front. Uniform max-side mesh normalization and per-axis rendered NOCS normalization are explained on the page. Feature PCA colors are visual projections of descriptors.
