@@ -34,3 +34,11 @@ for row in images:
  c=categories[row['category_id']];assert c['coordinate_source']=={k:v for k,v in row.items() if k!='category_id'}
  assert hashlib.sha256((SITE/c['coordinate_preview']).read_bytes()).hexdigest()==row['image_sha256']
 print(f'Catalogue verified: {n:,} entries, {len(categories):,} categories, {len(images)} original coordinate previews')
+
+overviews=stats['category_overviews']['images'];assert len(overviews)==stats['category_overviews']['matched_categories']
+assert len({r['category_id'] for r in overviews})==len(overviews)
+assert {c['id'] for c in categories.values() if c.get('overview')}=={r['category_id'] for r in overviews}
+for row in overviews:
+ c=categories[row['category_id']];assert c['overview_source']=={k:v for k,v in row.items() if k!='category_id'}
+ assert hashlib.sha256((SITE/c['overview']).read_bytes()).hexdigest()==row['image_sha256']
+print(f'Category overview assets verified: {len(overviews)} native-resolution figures')
