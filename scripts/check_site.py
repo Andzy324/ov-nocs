@@ -24,4 +24,5 @@ assert set(p['file'] for p in manifest if p['file'].startswith('site/assets/'))=
 subprocess.run(['python3',str(ROOT/'scripts/check_catalogue.py')],check=True)
 subprocess.run(['node',str(ROOT/'scripts/check_constellation.cjs')],check=True)
 subprocess.run(['python3',str(ROOT/'scripts/check_scene_correspondence.py')],check=True)
+subprocess.run(['node',str(ROOT/'scripts/check_pipeline_data.cjs')],check=True)
 print(f'Validated project-relative links, {len(manifest)} tracked assets, and JavaScript syntax')

@@ -19,7 +19,7 @@ for row in rows:
   assert sum(bool(f&bit) for f in c['flags'])==(c[key] or 0)
  for key in ['preview','overview','coordinate_preview']:
   if c.get(key):assert (SITE/c[key]).is_file(),c[key]
- for key in ['rgb','nocs']:
+ for key in ['rgb','mask','nocs']:
   if c.get('example'):assert (SITE/c['example'][key]).is_file()
 for ds in data['datasets']:
  cc=[c for c in categories.values() if c['dataset']==ds['id']]
