@@ -1,0 +1,155 @@
+[
+  {
+    "dataset": "ARKitScenes",
+    "normalization": "local per-axis box coordinates: x_object=(nocs_01-0.5)*size_xyz",
+    "display_geometry": "x_canonical=x_object/max(size_xyz); proportions preserved; RGB colors remain source NOCS",
+    "pose": "x_camera=R_object_to_camera*x_object+t_object_to_camera",
+    "pixel_centers": "((x+0.5)*RGB_width/NOCS_width, (y+0.5)*RGB_height/NOCS_height)",
+    "roundtrip_max_error_m": 4.996003610813204e-16,
+    "source_reprojection_median_px": 0.002815528071156487,
+    "source_reprojection_p95_px": 0.0058492972180599215,
+    "interpretation": "Residuals compare supplied NOCS/pose/intrinsics against source pixel centers; source correspondences are not optimized to reduce them.",
+    "normalization_comparison": {
+      "per_axis": "verified against local annotations",
+      "uniform_diagonal": "not used for this local coordinate-map encoding"
+    },
+    "object_metrics": [
+      {
+        "id": 1,
+        "category": "chair",
+        "source_sample_count": 1010,
+        "reprojection_median_px": 0.003386998548531841,
+        "reprojection_p95_px": 0.006031152890039101
+      },
+      {
+        "id": 2,
+        "category": "table",
+        "source_sample_count": 2,
+        "reprojection_median_px": 0.00300084719714939,
+        "reprojection_p95_px": 0.0035836570256248513
+      },
+      {
+        "id": 3,
+        "category": "chair",
+        "source_sample_count": 29,
+        "reprojection_median_px": 0.0022202625743497524,
+        "reprojection_p95_px": 0.003975424213824311
+      },
+      {
+        "id": 4,
+        "category": "chair",
+        "source_sample_count": 122,
+        "reprojection_median_px": 0.0024870791419046097,
+        "reprojection_p95_px": 0.004497805060393789
+      },
+      {
+        "id": 6,
+        "category": "sink",
+        "source_sample_count": 0,
+        "reprojection_median_px": null,
+        "reprojection_p95_px": null
+      },
+      {
+        "id": 7,
+        "category": "sink",
+        "source_sample_count": 13,
+        "reprojection_median_px": 0.0005640012019042602,
+        "reprojection_p95_px": 0.0014154556993977738
+      },
+      {
+        "id": 11,
+        "category": "cabinet",
+        "source_sample_count": 278,
+        "reprojection_median_px": 0.00162758808055396,
+        "reprojection_p95_px": 0.003436149225400586
+      },
+      {
+        "id": 16,
+        "category": "television",
+        "source_sample_count": 11,
+        "reprojection_median_px": 0.000448314368019165,
+        "reprojection_p95_px": 0.0013735741448142572
+      }
+    ]
+  },
+  {
+    "dataset": "KITTI",
+    "normalization": "local per-axis box coordinates: x_object=(nocs_01-0.5)*size_xyz",
+    "display_geometry": "x_canonical=x_object/max(size_xyz); proportions preserved; RGB colors remain source NOCS",
+    "pose": "x_camera=R_object_to_camera*x_object+t_object_to_camera",
+    "pixel_centers": "((x+0.5)*RGB_width/NOCS_width, (y+0.5)*RGB_height/NOCS_height)",
+    "roundtrip_max_error_m": 4.440892098500626e-15,
+    "source_reprojection_median_px": 6.072034277421894,
+    "source_reprojection_p95_px": 10.789793713909685,
+    "interpretation": "Residuals compare supplied NOCS/pose/intrinsics against source pixel centers; source correspondences are not optimized to reduce them.",
+    "normalization_comparison": {
+      "per_axis": "verified against local annotations",
+      "uniform_diagonal": "not used for this local coordinate-map encoding"
+    },
+    "object_metrics": [
+      {
+        "id": 2,
+        "category": "car",
+        "source_sample_count": 148,
+        "reprojection_median_px": 3.997856588742253,
+        "reprojection_p95_px": 6.109938899671207
+      },
+      {
+        "id": 3,
+        "category": "car",
+        "source_sample_count": 50,
+        "reprojection_median_px": 3.235704546502714,
+        "reprojection_p95_px": 4.567233860832839
+      },
+      {
+        "id": 4,
+        "category": "van",
+        "source_sample_count": 57,
+        "reprojection_median_px": 3.427625880539697,
+        "reprojection_p95_px": 4.6962155759543505
+      },
+      {
+        "id": 5,
+        "category": "car",
+        "source_sample_count": 204,
+        "reprojection_median_px": 4.760896598754921,
+        "reprojection_p95_px": 8.9573807691857
+      },
+      {
+        "id": 6,
+        "category": "car",
+        "source_sample_count": 13,
+        "reprojection_median_px": 7.168810474158338,
+        "reprojection_p95_px": 7.523358255879975
+      },
+      {
+        "id": 7,
+        "category": "car",
+        "source_sample_count": 59,
+        "reprojection_median_px": 3.8008786970898445,
+        "reprojection_p95_px": 5.284408572654869
+      },
+      {
+        "id": 8,
+        "category": "van",
+        "source_sample_count": 13,
+        "reprojection_median_px": 3.360710274389868,
+        "reprojection_p95_px": 3.8954723011529984
+      },
+      {
+        "id": 9,
+        "category": "van",
+        "source_sample_count": 1240,
+        "reprojection_median_px": 7.1801917520297245,
+        "reprojection_p95_px": 10.979786315045718
+      },
+      {
+        "id": 10,
+        "category": "cyclist",
+        "source_sample_count": 0,
+        "reprojection_median_px": null,
+        "reprojection_p95_px": null
+      }
+    ]
+  }
+]

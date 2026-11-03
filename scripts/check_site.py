@@ -23,4 +23,5 @@ for record in manifest:
 assert set(p['file'] for p in manifest if p['file'].startswith('site/assets/'))==set(str(p.relative_to(ROOT)) for p in (SITE/'assets').iterdir() if p.is_file())
 subprocess.run(['python3',str(ROOT/'scripts/check_catalogue.py')],check=True)
 subprocess.run(['node',str(ROOT/'scripts/check_constellation.cjs')],check=True)
+subprocess.run(['python3',str(ROOT/'scripts/check_scene_correspondence.py')],check=True)
 print(f'Validated project-relative links, {len(manifest)} tracked assets, and JavaScript syntax')

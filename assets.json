@@ -7421,6 +7421,116 @@
       "sha256": "8a5b52eae0cd1b76dc1562f5a89b1f13b1c1041e580a216a44b9986806fc0b74"
     },
     {
+      "file": "site/assets/correspondence-arkitscenes-1-nocs.png",
+      "bytes": 2415,
+      "sha256": "0287ac7aee13909b5f1050fd713a2f4022b9e7d580381e0762bddc7f018b1c15"
+    },
+    {
+      "file": "site/assets/correspondence-arkitscenes-11-nocs.png",
+      "bytes": 713,
+      "sha256": "a659e9c845dba0d26b4c4f561457b7b354236679ebab8608acf9233cb5557280"
+    },
+    {
+      "file": "site/assets/correspondence-arkitscenes-16-nocs.png",
+      "bytes": 144,
+      "sha256": "7ad850b3744ed5b236ec564874d49beadbe77837ee9f8dec179ff5a246785a17"
+    },
+    {
+      "file": "site/assets/correspondence-arkitscenes-2-nocs.png",
+      "bytes": 125,
+      "sha256": "5544cca37317c0a20afb47a255a2e9e37144db261f0130a9faad244a28b63386"
+    },
+    {
+      "file": "site/assets/correspondence-arkitscenes-3-nocs.png",
+      "bytes": 274,
+      "sha256": "a6bb2d76463b641a9d4d59192405a9877dd6d8a300e636bed428dfbaf7431e56"
+    },
+    {
+      "file": "site/assets/correspondence-arkitscenes-4-nocs.png",
+      "bytes": 660,
+      "sha256": "adb0c6633727e33398e3cfe4c36a9572480173d829e5fcf2bb2d87147f2f6f29"
+    },
+    {
+      "file": "site/assets/correspondence-arkitscenes-6-nocs.png",
+      "bytes": 82,
+      "sha256": "48ce1dba37dd167be0470cbde143716c394aeb49ae2322a9fb285597cc233223"
+    },
+    {
+      "file": "site/assets/correspondence-arkitscenes-7-nocs.png",
+      "bytes": 155,
+      "sha256": "64911438b57ef2d45cff6dcbdba53cd6576866a88e7e444575f6537931a5fdb5"
+    },
+    {
+      "file": "site/assets/correspondence-arkitscenes-instances-source.png",
+      "bytes": 2567,
+      "sha256": "b8cf0793abdd9804f23c098fa0e7ceac625a58b7e34db36964af8f2203f8fe05"
+    },
+    {
+      "file": "site/assets/correspondence-arkitscenes-nocs-source.png",
+      "bytes": 43066,
+      "sha256": "4e06ecf5ec69039957874078dc2669ddf3feaecb1c7c2510e3414761d1bfd692"
+    },
+    {
+      "file": "site/assets/correspondence-arkitscenes-rgb.webp",
+      "bytes": 321154,
+      "sha256": "fe2c226df4feaeb29cbb4a2441ab68a37210cbb2b39c09ae61bfe8398efada38"
+    },
+    {
+      "file": "site/assets/correspondence-kitti-2-nocs.png",
+      "bytes": 873,
+      "sha256": "ff3d84b92113f3decf32ca86ccf2be34441a6eb0a9a2bfce7d404adf453b359a"
+    },
+    {
+      "file": "site/assets/correspondence-kitti-3-nocs.png",
+      "bytes": 364,
+      "sha256": "203d67e98ef49868510e5d2097b0e474ccdb9c55abbc0670bff7e7d888897223"
+    },
+    {
+      "file": "site/assets/correspondence-kitti-4-nocs.png",
+      "bytes": 389,
+      "sha256": "826fca5d4215f20775e28673e389e5e5712e9b68158fb8ccb0d75a13102cdc98"
+    },
+    {
+      "file": "site/assets/correspondence-kitti-5-nocs.png",
+      "bytes": 1040,
+      "sha256": "a28ecca260a60916530d552b39f054cbd3e514d25fec0d8584cee4889ae8586f"
+    },
+    {
+      "file": "site/assets/correspondence-kitti-6-nocs.png",
+      "bytes": 152,
+      "sha256": "35c750d79b6a10922701210602cbf54ae05ac6badd338a2468e2bb6e08e000e2"
+    },
+    {
+      "file": "site/assets/correspondence-kitti-7-nocs.png",
+      "bytes": 362,
+      "sha256": "fd9803ee9bc45e4f98674d8f1d8fd56bb2149905fe5893d2ad8c0cdf42e00166"
+    },
+    {
+      "file": "site/assets/correspondence-kitti-8-nocs.png",
+      "bytes": 158,
+      "sha256": "0654894deb5240f03e81d107b7d0db75f76a70d513a6f0b4d22d663f3a504146"
+    },
+    {
+      "file": "site/assets/correspondence-kitti-9-nocs.png",
+      "bytes": 5614,
+      "sha256": "90f199decfbee56027d04b39796b50136af7a053928ab7aaf4843cf4b2248c62"
+    },
+    {
+      "file": "site/assets/correspondence-kitti-instances-source.png",
+      "bytes": 2921,
+      "sha256": "30337dfa9ac1f393854e6a2c7a4e68fb45ee880e1fd1399bfc1635ceef4d7e74"
+    },
+    {
+      "file": "site/assets/correspondence-kitti-nocs-source.png",
+      "bytes": 33746,
+      "sha256": "939df4b6e1b71496d52c0be577188aec9f0088a0c10f8a7b3d9037409b32ed0d"
+    },
+    {
+      "file": "site/assets/correspondence-kitti-rgb.webp",
+      "bytes": 179520,
+      "sha256": "d8752294f62ce6b7ad14f9ecb3ca3d699d0593269364bb7e30b4432908f25e6d"
+    },
+    {
       "file": "site/assets/coverage-future-03346f2134.webp",
       "bytes": 2052,
       "sha256": "9bfe849b5a530682b37e22c96356a1fa5f316c0fd175f70990cc5891df4249e0"
@@ -12424,6 +12534,16 @@
       "file": "site/feature-data.js",
       "bytes": 1229625,
       "sha256": "5f41aa32fcb029bdb1f0672504d791faf83a1bdf5d1a9f37aa2cac70ce9646dd"
+    },
+    {
+      "file": "site/scene-correspondence-data.js",
+      "bytes": 402802,
+      "sha256": "03829eeb787c0b9e2fcd28bdb38c7e6e0b063063911a25bb1366d7d8c5fc524c"
+    },
+    {
+      "file": "site/scene-correspondence-validation.json",
+      "bytes": 5249,
+      "sha256": "a9da312deb3637fec5e1e71ebe8c19b2ae1d83c897da2f96973315d2388cab72"
     },
     {
       "file": "site/scene-data.js",
