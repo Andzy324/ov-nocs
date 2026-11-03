@@ -6,7 +6,7 @@ Every image, video, poster, display mesh and interactive point/transform dataset
 | --- | --- |
 | `site/assets/batch-*` | Native figures and RGB inputs from the selected multi-category pipeline runs |
 | `site/assets/*-rgb-*`, `*-mask-*`, `*-nocs-*` | Selected paired object-render examples |
-| `site/assets/canonical-*` | Locally retrieved category preview images |
+| `site/assets/coverage-*` | Locally retrieved category preview images |
 | `site/assets/scene-*` | Scene visualizations for Hypersim, V-KITTI, Real275 and the HSSD layout fallback |
 | `site/assets/annotation.mp4` and poster | Canonicalization-tool demonstration |
 | `site/assets/dataset-turntable-original.mp4` and poster | Original-resolution RGB/NOCS turntable stream used by the presentation |
