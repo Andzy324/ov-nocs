@@ -141,7 +141,7 @@ function renderGallery(){const shown=gallery.filter(g=>filter==='all'||g.cat===f
 $('#gallery-filters').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;filter=b.dataset.filter;renderGallery();});$('#gallery-grid').addEventListener('click',e=>{const b=e.target.closest('button[data-image]');if(!b)return;const g=gallery.find(x=>x.image===b.dataset.image);$('#lightbox img').src=asset('assets/'+g.image);$('#lightbox img').alt=g.title;$('#lightbox p').textContent=g.description;$('#lightbox').showModal();});
 const demos = [
   {
-    "file": "annotation",
+    "file": "annotation-clean",
     "title": "Shape Canonicalization Workflow",
     "body": "Interactive orientation annotation through category grouping, prototype selection, rotation adjustment and collection-level inspection.",
     "caption": "Interactive annotation and canonical-orientation inspection"

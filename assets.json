@@ -86,19 +86,19 @@
       "sha256": "b734c3709fc0e93b5ceb98b4f9b4c21bac6aae7c2f931145a2c50ec49303ead2"
     },
     {
+      "file": "site/assets/annotation-clean.jpg",
+      "bytes": 178103,
+      "sha256": "970be087ebdbe15f5f8a3f5a3f626d5437780460a5ff7a8b67cb672c1fb69b6b"
+    },
+    {
+      "file": "site/assets/annotation-clean.mp4",
+      "bytes": 1162375,
+      "sha256": "25d0afa76d11eb11e55dae8a517c060e427985b1ecabff5bc9ef78b59b9e8af1"
+    },
+    {
       "file": "site/assets/annotation-gui.webp",
       "bytes": 100444,
       "sha256": "25b934e91b01bee212c2db89b132bf42a1b3557fce57b8f1bad9460c294e63cd"
-    },
-    {
-      "file": "site/assets/annotation.jpg",
-      "bytes": 27958,
-      "sha256": "5aeca87e1c3f7ffc90eacb7340f51f99c7eb66ce0c59ed8debd9e8b637873d94"
-    },
-    {
-      "file": "site/assets/annotation.mp4",
-      "bytes": 558704,
-      "sha256": "4d396242c5a8d0b21449ee67cd9ca76791a0b54aab20e01b2d4a7bd7fddd75b8"
     },
     {
       "file": "site/assets/batch-bottle-fusion.webp",

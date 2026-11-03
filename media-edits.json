@@ -1,0 +1,28 @@
+{
+  "asset": "site/assets/annotation-clean.mp4",
+  "source": "project presentation / slide 5 embedded media1.mp4",
+  "source_sha256": "072df17c8395109eaa85f054867cee196b7712e486b4d48d1b69e8a18751f561",
+  "source_dimensions": [
+    1920,
+    1072
+  ],
+  "source_frame_rate": 24,
+  "trim": {
+    "first_included_frame": 36,
+    "end_exclusive_frame": 1020,
+    "source_start_seconds": 1.5,
+    "source_end_seconds": 42.5,
+    "output_seconds": 41
+  },
+  "crop": {
+    "x": 70,
+    "y": 62,
+    "width": 1850,
+    "height": 1010
+  },
+  "video_codec": "H.264 / yuv420p",
+  "audio": "removed, consistent with the previous silent web derivative",
+  "poster": "site/assets/annotation-clean.jpg",
+  "poster_seconds": 12,
+  "rotation_video": "Preserved in full at native 1348x1056; only player-imposed letterboxing removed."
+}

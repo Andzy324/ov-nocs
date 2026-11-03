@@ -8,7 +8,7 @@ Every image, video, poster, display mesh and interactive point/transform dataset
 | `site/assets/*-rgb-*`, `*-mask-*`, `*-nocs-*` | Selected paired object-render examples |
 | `site/assets/coverage-*` | Locally retrieved category preview images |
 | `site/assets/scene-*` | Scene visualizations for Hypersim, V-KITTI, Real275 and the HSSD layout fallback |
-| `site/assets/annotation.mp4` and poster | Canonicalization-tool demonstration |
+| `site/assets/annotation-clean.mp4` and poster | Canonicalization-tool demonstration |
 | `site/assets/dataset-turntable-original.mp4` and poster | Original-resolution RGB/NOCS turntable stream used by the presentation |
 | `site/canonical-data.js` | Nine display meshes, normals, triangle indices, frame transforms and review metadata |
 | `site/feature-data.js`, `algorithm-data.js` | Surface descriptors projected for visualization and measured matching traces |
@@ -19,3 +19,5 @@ Every image, video, poster, display mesh and interactive point/transform dataset
 Named data sources include Objaverse-XL, Omni6DPose, 3D-FUTURE, HSSD, ShapeNet, Hypersim, V-KITTI and Real275. Existing method diagrams, scene images and demonstration videos were retained from the project presentation; new figures are derived from recorded local runs. Source dataset and media terms remain applicable. This is a project presentation, not the complete dataset release.
 
 `assets.json` records repository-relative filenames, byte counts and SHA-256 hashes. Private machine paths and raw experiment logs are not included.
+
+The annotation demonstration is a 41-second edit of the original recording: source frames 36–1019 at 24 fps, with desktop chrome cropped away. Start/end OBS windows are omitted. The player follows each video’s intrinsic aspect ratio. See `media-edits.json` for exact edit parameters.

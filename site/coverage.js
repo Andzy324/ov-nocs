@@ -56,9 +56,13 @@
  const view=window.createObjectConstellation(canvas,{onPick:show});
  function show(c){view.select(c);const box=document.getElementById('coverage-detail');box.replaceChildren();
   const el=(tag,text,cl)=>{const e=document.createElement(tag);e.textContent=text;if(cl)e.className=cl;return e;};
-  box.append(el('p',sources.get(c.dataset).name,'eyebrow'),el('h3',c.label.replaceAll('_',' ')),el('p',`${format(c.count)} mesh exports · ${format(c.render_count)} RGB / NOCS outputs · ${format(c.preview_count)} canonical previews`,'coverage-detail-counts'));
-  if(c.preview){const img=document.createElement('img');img.src=asset(c.preview);img.alt=c.preview_kind+' for '+c.label;box.append(img,el('p',c.preview_kind,'small-note'));if(c.preview_instance)box.append(el('p',c.preview_instance,'coverage-id'));}
-  box.append(el('p','EXPORTED INSTANCE IDS','eyebrow'));const ids=document.createElement('div');ids.className='coverage-ids';c.instances.forEach(id=>ids.append(el('div',id)));box.append(ids);
+  box.append(el('p',sources.get(c.dataset).name,'eyebrow'),el('h3',c.label.replaceAll('_',' ')),el('p',`${format(c.count)} instances`,'coverage-detail-counts'));
+  const stages=el('ul','','artifact-stages');[['Mesh exports',c.count],['RGB / NOCS outputs',c.render_count],['Canonical previews',c.preview_count]].forEach(([label,count])=>{const row=el('li','','');row.append(el('span',label),el('strong',format(count)));row.classList.toggle('unavailable',count===0);stages.append(row);});box.append(stages);
+  if(c.preview){const img=document.createElement('img');img.src=asset(c.preview);img.alt=c.preview_kind+' for '+c.label;box.append(img,el('p',c.preview_kind,'small-note'));}
+  const details=el('details','','source-details');details.append(el('summary','Source details'));
+  details.append(el('p',`Source category: ${c.source_category}`,'small-note'));
+  if(c.preview_instance)details.append(el('p','Preview source ID','source-detail-label'),el('p',c.preview_instance,'coverage-id'));
+  details.append(el('p','Exported instance IDs','source-detail-label'));const ids=el('div','','coverage-ids');c.instances.forEach(id=>ids.append(el('div',id)));details.append(ids);box.append(details);
  }
  function update(){const cats=data.categories.filter(matches),count=cats.reduce((n,c)=>n+c.flags.filter(f=>f&stage).length,0);document.getElementById('coverage-lit').textContent=format(count);document.getElementById('coverage-groups').textContent=format(cats.length);document.getElementById('coverage-state').textContent=({1:'MESH EXPORTS',2:'RGB / NOCS OUTPUTS',4:'CANONICAL PREVIEWS'})[stage];view.setFilter(matches);view.setStage(stage);}
  function choose(){const c=data.categories.find(c=>matches(c)&&c.preview)||data.categories.find(matches);if(c)show(c);else document.getElementById('coverage-detail').textContent='No matching categories.';}

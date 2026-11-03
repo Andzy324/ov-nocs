@@ -12,10 +12,10 @@
   if(mode==='objects'){
    const ds=datasets.find(d=>d.id===sources[index][0]),c=category||window.COVERAGE_DATA.categories.filter(c=>c.dataset===ds.id&&c.preview).sort((a,b)=>b.count-a.count)[0];
    if(mainView)mainView.select(c);
-   panel.append(make('p','OBJECT-LEVEL EXAMPLE','eyebrow'),make('h3',ds.name));
-   if(c?.preview)panel.append(image(c.preview,c.preview_kind+' for '+c.label));
-   if(c)panel.append(make('p',c.label.replaceAll('_',' ')+' · '+c.count.toLocaleString('en-US')+' mesh exports','collection-caption'));
-   if(c?.preview)panel.append(make('p',c.preview_kind,'small-note'));
+   panel.append(make('p',ds.name,'eyebrow'),make('h3',c?c.label.replaceAll('_',' '):ds.name));
+   if(c){panel.append(make('p',c.count.toLocaleString('en-US')+' instances','collection-caption'));const stages=make('ul','','artifact-stages');[['Mesh exports',c.count],['RGB / NOCS outputs',c.render_count],['Canonical previews',c.preview_count]].forEach(([label,count])=>{const row=make('li','','');row.append(make('span',label),make('strong',count.toLocaleString('en-US')));row.classList.toggle('unavailable',count===0);stages.append(row);});panel.append(stages);}
+   if(c?.preview)panel.append(image(c.preview,c.preview_kind+' for '+c.label),make('p',c.preview_kind,'small-note'));
+   if(c){const details=make('details','','source-details');details.append(make('summary','Source details'),make('p','Dataset: '+ds.name,'small-note'),make('p','Source category: '+c.source_category,'small-note'));if(c.preview_instance)details.append(make('p','Preview source ID','source-detail-label'),make('p',c.preview_instance,'coverage-id'));panel.append(details);}
    const link=make('a','Explore processed categories →','quiet-link');link.href='#coverage';link.addEventListener('click',()=>document.querySelector(`#coverage-sources [data-source="${ds.id}"]`).click());panel.append(link);
   }else{
    const s=scenes[index];panel.append(make('p',s[2].toUpperCase(),'eyebrow'),make('h3',s[0]),image('assets/scene-'+s[1]+'-coordinates.webp',s[0]+' scene-space representation'),make('p','Image-space annotations and scene-space object frames','collection-caption'));
