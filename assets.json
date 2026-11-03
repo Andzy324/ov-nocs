@@ -86,19 +86,19 @@
       "sha256": "b734c3709fc0e93b5ceb98b4f9b4c21bac6aae7c2f931145a2c50ec49303ead2"
     },
     {
-      "file": "site/assets/annotation-clean.jpg",
-      "bytes": 178103,
-      "sha256": "970be087ebdbe15f5f8a3f5a3f626d5437780460a5ff7a8b67cb672c1fb69b6b"
-    },
-    {
-      "file": "site/assets/annotation-clean.mp4",
-      "bytes": 1162375,
-      "sha256": "25d0afa76d11eb11e55dae8a517c060e427985b1ecabff5bc9ef78b59b9e8af1"
-    },
-    {
       "file": "site/assets/annotation-gui.webp",
       "bytes": 100444,
       "sha256": "25b934e91b01bee212c2db89b132bf42a1b3557fce57b8f1bad9460c294e63cd"
+    },
+    {
+      "file": "site/assets/annotation-workflow.jpg",
+      "bytes": 147145,
+      "sha256": "eace7671ab1e99d9e9bf778e57a3538cd21b4bcf9ddadf7f4c290730caafd0e6"
+    },
+    {
+      "file": "site/assets/annotation-workflow.mp4",
+      "bytes": 1238509,
+      "sha256": "7d6de58df1a374ee739342d2289503b3b5c9f5be0c6e6a149d1a2dacf2f4b62e"
     },
     {
       "file": "site/assets/batch-bottle-fusion.webp",
@@ -4461,9 +4461,9 @@
       "sha256": "55888a6e9b9388a5614307b916148b041d1e815336d43683af5475ab4587a31e"
     },
     {
-      "file": "site/assets/object-atlas-3d-preview.webp",
-      "bytes": 187280,
-      "sha256": "ce33ba506b4f8ee290ef3e51549a08a08faebb688bbaba8ebc99b2aa7eab9eca"
+      "file": "site/assets/object-atlas-catalogue.webp",
+      "bytes": 204252,
+      "sha256": "149bc8dc99731e65f28e2840dc3b4952b16b1e170252b8d91bc66d80fd5e0b6b"
     },
     {
       "file": "site/assets/object-atlas-preview.webp",
@@ -5226,9 +5226,14 @@
       "sha256": "a4ca4dcb263b24e29a722723ace3aa20762f987869447c9845d05924d5054b4b"
     },
     {
+      "file": "site/catalogue-statistics.json",
+      "bytes": 236430,
+      "sha256": "06f9a46f01e01d95c1c94d3b8007124b3aa9c70b6a12cfaed0e386849d5b3cbb"
+    },
+    {
       "file": "site/coverage-data.js",
-      "bytes": 2601582,
-      "sha256": "0dca38b2b03c8d21cf03a1185bbc9f87ee045a759f745da415c51f9037ba436c"
+      "bytes": 590046,
+      "sha256": "5c991deafa7bd11f8e96d3cb7901d1f3034f701dd2cd17dc1714e51a4993fe45"
     },
     {
       "file": "site/data.js",

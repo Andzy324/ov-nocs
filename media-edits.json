@@ -1,28 +1,64 @@
 {
-  "asset": "site/assets/annotation-clean.mp4",
-  "source": "project presentation / slide 5 embedded media1.mp4",
+  "source": "slide 5 embedded media1.mp4",
   "source_sha256": "072df17c8395109eaa85f054867cee196b7712e486b4d48d1b69e8a18751f561",
   "source_dimensions": [
     1920,
     1072
   ],
-  "source_frame_rate": 24,
-  "trim": {
-    "first_included_frame": 36,
-    "end_exclusive_frame": 1020,
-    "source_start_seconds": 1.5,
-    "source_end_seconds": 42.5,
-    "output_seconds": 41
-  },
-  "crop": {
-    "x": 70,
-    "y": 62,
-    "width": 1850,
-    "height": 1010
-  },
+  "output_dimensions": [
+    1920,
+    1080
+  ],
+  "frame_rate": 24,
+  "duration": 14.5,
+  "time_scale": 1,
+  "segments": [
+    {
+      "source_start": 2,
+      "source_end": 4.5,
+      "caption": "01 / Category collection",
+      "framing": "crop=1024:576:896:460,scale=1920:1080:flags=lanczos"
+    },
+    {
+      "source_start": 7.75,
+      "source_end": 9.25,
+      "caption": "02 / Select a cluster",
+      "framing": "crop=1850:1010:70:62,scale=1920:1048:flags=lanczos,pad=1920:1080:0:16:color=white"
+    },
+    {
+      "source_start": 9.25,
+      "source_end": 10.75,
+      "caption": "02 / Inspect the prototype",
+      "framing": "crop=800:450:1120:550,scale=1920:1080:flags=lanczos"
+    },
+    {
+      "source_start": 10.75,
+      "source_end": 12.25,
+      "caption": "03 / Inspect the category",
+      "framing": "crop=1850:1010:70:62,scale=1920:1048:flags=lanczos,pad=1920:1080:0:16:color=white"
+    },
+    {
+      "source_start": 22.5,
+      "source_end": 26,
+      "caption": "03 / Select an instance",
+      "framing": "crop=864:486:1056:500,scale=1920:1080:flags=lanczos"
+    },
+    {
+      "source_start": 36.5,
+      "source_end": 38.5,
+      "caption": "04 / Canonicalize the cluster",
+      "framing": "Synchronized control-panel and 3D-viewport crops from the same source frames; no simulated content."
+    },
+    {
+      "source_start": 40.5,
+      "source_end": 42.5,
+      "caption": "05 / Review canonical orientations",
+      "framing": "crop=864:486:1056:500,scale=1920:1080:flags=lanczos"
+    }
+  ],
+  "description": "Chronological excerpts; waiting intervals omitted. Native 3D areas enlarged by editorial crops. UI operations retained in context and in a synchronized split view.",
+  "asset": "site/assets/annotation-workflow.mp4",
+  "poster": "site/assets/annotation-workflow.jpg",
   "video_codec": "H.264 / yuv420p",
-  "audio": "removed, consistent with the previous silent web derivative",
-  "poster": "site/assets/annotation-clean.jpg",
-  "poster_seconds": 12,
-  "rotation_video": "Preserved in full at native 1348x1056; only player-imposed letterboxing removed."
+  "rotation_video": "Preserved in full at native 1348x1056."
 }

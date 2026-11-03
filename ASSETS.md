@@ -8,16 +8,18 @@ Every image, video, poster, display mesh and interactive point/transform dataset
 | `site/assets/*-rgb-*`, `*-mask-*`, `*-nocs-*` | Selected paired object-render examples |
 | `site/assets/coverage-*` | Locally retrieved category preview images |
 | `site/assets/scene-*` | Scene visualizations for Hypersim, V-KITTI, Real275 and the HSSD layout fallback |
-| `site/assets/annotation-clean.mp4` and poster | Canonicalization-tool demonstration |
+| `site/assets/annotation-workflow.mp4` and poster | Canonicalization-tool demonstration |
 | `site/assets/dataset-turntable-original.mp4` and poster | Original-resolution RGB/NOCS turntable stream used by the presentation |
 | `site/canonical-data.js` | Nine display meshes, normals, triangle indices, frame transforms and review metadata |
 | `site/feature-data.js`, `algorithm-data.js` | Surface descriptors projected for visualization and measured matching traces |
 | `site/scene-data.js` | HSSD sampled surfaces, scene transforms, bounding boxes and example metadata |
-| `site/coverage-data.js` | Dataset/category counts, instance IDs, stage indicators and atlas positions |
+| `site/coverage-data.js` | Complete source-catalogue counts, report-based stage indicators, representative IDs and atlas positions |
 | `figures/` | Publication-resolution PNG counterparts of the multi-category figures |
 
 Named data sources include Objaverse-XL, Omni6DPose, 3D-FUTURE, HSSD, ShapeNet, Hypersim, V-KITTI and Real275. Existing method diagrams, scene images and demonstration videos were retained from the project presentation; new figures are derived from recorded local runs. Source dataset and media terms remain applicable. This is a project presentation, not the complete dataset release.
 
 `assets.json` records repository-relative filenames, byte counts and SHA-256 hashes. Private machine paths and raw experiment logs are not included.
 
-The annotation demonstration is a 41-second edit of the original recording: source frames 36–1019 at 24 fps, with desktop chrome cropped away. Start/end OBS windows are omitted. The player follows each video’s intrinsic aspect ratio. See `media-edits.json` for exact edit parameters.
+The annotation demonstration is a 14.5-second chronological edit at native playback speed. Seven excerpts retain category browsing, cluster inspection, instance selection, canonicalization and result review. Editorial crops enlarge the 3D viewport, with synchronized control/viewport framing for the canonicalization action. Idle intervals and OBS windows are omitted. See `media-edits.json` for exact intervals and framing.
+
+`site/catalogue-statistics.json` preserves the source filenames, SHA-256 hashes, scope, complete per-category counts and coverage notes behind the 134,644-entry / 1,100-group atlas. Counts describe catalogue memberships, not a claim of complete processing or a deduplicated union. Objaverse uses the 434-category alignment summary (44,473 entries), corroborated by the Drive progress workbook. 3D-FUTURE excludes 1,751 entries without a category. Other catalogues retain their version-specific metadata labels. Missing reports are null. Local preview availability does not determine category sizes.

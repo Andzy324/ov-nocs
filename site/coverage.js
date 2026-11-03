@@ -51,20 +51,20 @@
   return {setFilter(fn){filter=fn;request();},setStage(value){stage=value;request();},select(c){picked=c;request();},reset(){yaw=3;pitch=-1;zoom=1.45;panX=panY=0;request();},toggleOrbit(){auto=!auto;request();return auto;},get orbiting(){return auto;},replay(){progress=0;lightStart=performance.now();request();},dispose(){auto=false;resizeObserver.disconnect();observer.disconnect();cancelAnimationFrame(raf);},save(){draw();const a=document.createElement('a');a.download='OV-NOCS-3D-object-atlas.png';a.href=canvas.toDataURL('image/png');a.click();}};
  };
  const canvas=document.getElementById('coverage-canvas');if(!canvas)return;
- const format=n=>n.toLocaleString('en-US');let stage=1,filter='all',query='';
+ const format=n=>n==null?'Not reported':n.toLocaleString('en-US');let stage=1,filter='all',query='';
  const matches=c=>(filter==='all'||c.dataset===filter)&&(!query||c.label.toLowerCase().includes(query));
  const view=window.createObjectConstellation(canvas,{onPick:show});
  function show(c){view.select(c);const box=document.getElementById('coverage-detail');box.replaceChildren();
   const el=(tag,text,cl)=>{const e=document.createElement(tag);e.textContent=text;if(cl)e.className=cl;return e;};
-  box.append(el('p',sources.get(c.dataset).name,'eyebrow'),el('h3',c.label.replaceAll('_',' ')),el('p',`${format(c.count)} instances`,'coverage-detail-counts'));
-  const stages=el('ul','','artifact-stages');[['Mesh exports',c.count],['RGB / NOCS outputs',c.render_count],['Canonical previews',c.preview_count]].forEach(([label,count])=>{const row=el('li','','');row.append(el('span',label),el('strong',format(count)));row.classList.toggle('unavailable',count===0);stages.append(row);});box.append(stages);
+  box.append(el('p',sources.get(c.dataset).name,'eyebrow'),el('h3',c.label.replaceAll('_',' ')),el('p',`${format(c.count)} catalogue entries`,'coverage-detail-counts'));
+  const stages=el('ul','','artifact-stages');[['Catalogue entries',c.count],['Reported orientations',c.orientation_count],['Reported valid renders',c.render_count]].forEach(([label,count])=>{const row=el('li','','');row.append(el('span',label),el('strong',format(count)));row.classList.toggle('unavailable',count==null);stages.append(row);});box.append(stages);
   if(c.preview){const img=document.createElement('img');img.src=asset(c.preview);img.alt=c.preview_kind+' for '+c.label;box.append(img,el('p',c.preview_kind,'small-note'));}
   const details=el('details','','source-details');details.append(el('summary','Source details'));
   details.append(el('p',`Source category: ${c.source_category}`,'small-note'));
   if(c.preview_instance)details.append(el('p','Preview source ID','source-detail-label'),el('p',c.preview_instance,'coverage-id'));
-  details.append(el('p','Exported instance IDs','source-detail-label'));const ids=el('div','','coverage-ids');c.instances.forEach(id=>ids.append(el('div',id)));details.append(ids);box.append(details);
+  const ds=sources.get(c.dataset);details.append(el('p',ds.scope,'small-note'),el('p','Metadata: '+ds.metadata_source,'small-note'));const link=el('a','Catalogue statistics & coverage notes ↗','quiet-link');link.href='catalogue-statistics.json';details.append(link);box.append(details);
  }
- function update(){const cats=data.categories.filter(matches),count=cats.reduce((n,c)=>n+c.flags.filter(f=>f&stage).length,0);document.getElementById('coverage-lit').textContent=format(count);document.getElementById('coverage-groups').textContent=format(cats.length);document.getElementById('coverage-state').textContent=({1:'MESH EXPORTS',2:'RGB / NOCS OUTPUTS',4:'CANONICAL PREVIEWS'})[stage];view.setFilter(matches);view.setStage(stage);}
+ function update(){const cats=data.categories.filter(matches),count=cats.reduce((n,c)=>n+c.flags.filter(f=>f&stage).length,0);const reported=stage===1||cats.some(c=>(stage===2?c.orientation_count:c.render_count)!=null);document.getElementById('coverage-lit').textContent=reported?format(count):'Not reported';document.getElementById('coverage-groups').textContent=format(cats.length);document.getElementById('coverage-state').textContent=({1:'CATALOGUE ENTRIES',2:'REPORTED ORIENTATIONS',4:'REPORTED VALID RENDERS'})[stage];view.setFilter(matches);view.setStage(stage);}
  function choose(){const c=data.categories.find(c=>matches(c)&&c.preview)||data.categories.find(matches);if(c)show(c);else document.getElementById('coverage-detail').textContent='No matching categories.';}
  document.getElementById('coverage-sources').innerHTML='<button data-source="all" class="active">All datasets</button>'+data.datasets.map(d=>`<button data-source="${d.id}" style="--source-color:${d.color}">${d.name} <span>${format(d.instances)}</span></button>`).join('');
  document.getElementById('coverage-sources').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;filter=b.dataset.source;document.querySelectorAll('#coverage-sources button').forEach(x=>x.classList.toggle('active',x===b));update();choose();});
