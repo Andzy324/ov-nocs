@@ -55,3 +55,5 @@
 @media(max-width:900px){.correspondence-lab{padding:18px}.correspondence-grid canvas,.correspondence-nocs-panel>div{height:270px}}@media(max-width:600px){.correspondence-grid{grid-template-columns:1fr}.correspondence-lab{padding:12px}.correspondence-grid canvas{height:300px}.overview-route{padding:12px 8px;gap:4px;grid-template-columns:1fr 10px 1fr 10px 1fr}.overview-route article{padding:6px}.overview-route h3{font-size:10px}.overview-route img{height:65px}}
 
 .correspondence-image-wrap{position:relative}.correspondence-pick{position:absolute;transform:translate(-50%,-50%);padding:0;width:23px;height:23px;border-radius:50%;border:1px solid #f2f7d7;background:#18362cdb;color:#fff;font:10px var(--mono);cursor:pointer}.correspondence-pick.active{background:#e2edae;color:#243a29;box-shadow:0 0 0 3px #dce9a449}
+
+.correspondence-nocs-panel img{width:80%;height:220px;min-height:0}
