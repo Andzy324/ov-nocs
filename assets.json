@@ -12116,6 +12116,16 @@
       "sha256": "0a7d7e5f1afe17ced0603683f4f0dcd289623286b37152325934df675242b038"
     },
     {
+      "file": "site/assets/scene-arkitscenes-coordinates.webp",
+      "bytes": 256702,
+      "sha256": "5d67f285f86c5280096d133c8a5673846194a1a4072a33eb2d008c9cbe3191d0"
+    },
+    {
+      "file": "site/assets/scene-arkitscenes-rgb.webp",
+      "bytes": 247798,
+      "sha256": "479843a9e0368c985dc4859fba5535c633d148b9480d277aa3dfe461550c8a7a"
+    },
+    {
       "file": "site/assets/scene-hypersim-coordinates.webp",
       "bytes": 80000,
       "sha256": "f8efd7fbd6fbbbae9170726b439c20d99847c21eb520dc6ce6f77fdad6d7aa6c"
@@ -12124,6 +12134,16 @@
       "file": "site/assets/scene-hypersim-rgb.webp",
       "bytes": 17516,
       "sha256": "899721d8ecddde072c2617715ad16b0a53d7f60bc4dd3caa699d2200cca078ff"
+    },
+    {
+      "file": "site/assets/scene-kitti-coordinates.webp",
+      "bytes": 182872,
+      "sha256": "d08a31fbcf4986e356feb6f2bf9c945df72b1bc0f2410c8da610369002e81b8e"
+    },
+    {
+      "file": "site/assets/scene-kitti-rgb.webp",
+      "bytes": 171830,
+      "sha256": "bc518b12627f94fe909f108f6a397a0bbbe6f2761114fc470fd330b5e8c4aeaf"
     },
     {
       "file": "site/assets/scene-layout-preview.png",
@@ -12407,8 +12427,8 @@
     },
     {
       "file": "site/scene-data.js",
-      "bytes": 2028342,
-      "sha256": "6562a44e179e727aa1ad833a38f177ff879223cfa91e2ad1361a671369ca28f2"
+      "bytes": 2037681,
+      "sha256": "12be3c1f7f23e4ab543b6d3f4c7d468d7ec0c54bd343df1ecbc3ae26fda56efe"
     }
   ]
 }
